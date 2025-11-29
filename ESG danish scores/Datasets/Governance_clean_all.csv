@@ -1,0 +1,68 @@
+"indicator";"year";"omrade";"value";"insti";"vtyp"
+"cpi_score";2015;"Total";91;NA;NA
+"cpi_score";2016;"Total";90;NA;NA
+"cpi_score";2017;"Total";88;NA;NA
+"cpi_score";2018;"Total";88;NA;NA
+"cpi_score";2019;"Total";87;NA;NA
+"cpi_score";2020;"Total";88;NA;NA
+"cpi_score";2021;"Total";88;NA;NA
+"cpi_score";2022;"Total";90;NA;NA
+"cpi_score";2023;"Total";90;NA;NA
+"cpi_score";2024;"Total";90;NA;NA
+"trust_in_institutions";2016;NA;47;"National government";NA
+"trust_in_institutions";2018;NA;63;"National government";NA
+"trust_in_institutions";2020;NA;72;"National government";NA
+"trust_in_institutions";2021;NA;49;"National government";NA
+"trust_in_institutions";2023;NA;44;"National government";NA
+"trust_in_institutions";2016;NA;79;"Policeforce";NA
+"trust_in_institutions";2018;NA;85;"Policeforce";NA
+"trust_in_institutions";2020;NA;NA;"Policeforce";NA
+"trust_in_institutions";2021;NA;79;"Policeforce";NA
+"trust_in_institutions";2023;NA;69;"Policeforce";NA
+"trust_in_institutions";2016;NA;85;"Healthcare system";NA
+"trust_in_institutions";2018;NA;88;"Healthcare system";NA
+"trust_in_institutions";2020;NA;NA;"Healthcare system";NA
+"trust_in_institutions";2021;NA;NA;"Healthcare system";NA
+"trust_in_institutions";2023;NA;NA;"Healthcare system";NA
+"trust_in_institutions";2016;NA;82;"Judicial system";NA
+"trust_in_institutions";2018;NA;87;"Judicial system";NA
+"trust_in_institutions";2020;NA;NA;"Judicial system";NA
+"trust_in_institutions";2021;NA;78;"Judicial system";NA
+"trust_in_institutions";2023;NA;75;"Judicial system";NA
+"trust_in_institutions";2016;NA;79;"Education system";NA
+"trust_in_institutions";2018;NA;84;"Education system";NA
+"trust_in_institutions";2020;NA;NA;"Education system";NA
+"trust_in_institutions";2021;NA;78;"Education system";NA
+"trust_in_institutions";2023;NA;74;"Education system";NA
+"voter_turnout";2013;NA;NA;NA;"Election to the Parliament"
+"voter_turnout";2014;NA;NA;NA;"Election to the Parliament"
+"voter_turnout";2015;NA;85,9;NA;"Election to the Parliament"
+"voter_turnout";2017;NA;NA;NA;"Election to the Parliament"
+"voter_turnout";2019;NA;84,6;NA;"Election to the Parliament"
+"voter_turnout";2021;NA;NA;NA;"Election to the Parliament"
+"voter_turnout";2022;NA;84,2;NA;"Election to the Parliament"
+"voter_turnout";2024;NA;NA;NA;"Election to the Parliament"
+"voter_turnout";2013;NA;NA;NA;"Election to the European Parliament"
+"voter_turnout";2014;NA;56,3;NA;"Election to the European Parliament"
+"voter_turnout";2015;NA;NA;NA;"Election to the European Parliament"
+"voter_turnout";2017;NA;NA;NA;"Election to the European Parliament"
+"voter_turnout";2019;NA;66,1;NA;"Election to the European Parliament"
+"voter_turnout";2021;NA;NA;NA;"Election to the European Parliament"
+"voter_turnout";2022;NA;NA;NA;"Election to the European Parliament"
+"voter_turnout";2024;NA;56,9;NA;"Election to the European Parliament"
+"voter_turnout";2013;NA;71,9;NA;"Election to the municipality councils"
+"voter_turnout";2014;NA;NA;NA;"Election to the municipality councils"
+"voter_turnout";2015;NA;NA;NA;"Election to the municipality councils"
+"voter_turnout";2017;NA;70,8;NA;"Election to the municipality councils"
+"voter_turnout";2019;NA;NA;NA;"Election to the municipality councils"
+"voter_turnout";2021;NA;67,2;NA;"Election to the municipality councils"
+"voter_turnout";2022;NA;NA;NA;"Election to the municipality councils"
+"voter_turnout";2024;NA;NA;NA;"Election to the municipality councils"
+"voter_turnout";2013;NA;71,8;NA;"Election to the region councils"
+"voter_turnout";2014;NA;NA;NA;"Election to the region councils"
+"voter_turnout";2015;NA;NA;NA;"Election to the region councils"
+"voter_turnout";2017;NA;70,7;NA;"Election to the region councils"
+"voter_turnout";2019;NA;NA;NA;"Election to the region councils"
+"voter_turnout";2021;NA;67;NA;"Election to the region councils"
+"voter_turnout";2022;NA;NA;NA;"Election to the region councils"
+"voter_turnout";2024;NA;NA;NA;"Election to the region councils"
