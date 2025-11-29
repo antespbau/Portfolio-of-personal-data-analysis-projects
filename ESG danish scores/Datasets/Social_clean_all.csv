@@ -1,0 +1,413 @@
+"indicator";"year";"case_type";"value";"absence_type";"sector";"sex";"age_group";"palma_type";"income_status";"benefit_type";"education_group"
+"gender_discr_upheld_cases";2015;"Total cases";72;NA;NA;NA;NA;NA;NA;NA;NA
+"gender_discr_upheld_cases";2016;"Total cases";115;NA;NA;NA;NA;NA;NA;NA;NA
+"gender_discr_upheld_cases";2017;"Total cases";118;NA;NA;NA;NA;NA;NA;NA;NA
+"gender_discr_upheld_cases";2018;"Total cases";86;NA;NA;NA;NA;NA;NA;NA;NA
+"gender_discr_upheld_cases";2019;"Total cases";94;NA;NA;NA;NA;NA;NA;NA;NA
+"gender_discr_upheld_cases";2020;"Total cases";100;NA;NA;NA;NA;NA;NA;NA;NA
+"gender_discr_upheld_cases";2021;"Total cases";105;NA;NA;NA;NA;NA;NA;NA;NA
+"gender_discr_upheld_cases";2022;"Total cases";150;NA;NA;NA;NA;NA;NA;NA;NA
+"gender_discr_upheld_cases";2023;"Total cases";51;NA;NA;NA;NA;NA;NA;NA;NA
+"gender_discr_upheld_cases";2024;"Total cases";131;NA;NA;NA;NA;NA;NA;NA;NA
+"gender_discr_upheld_cases";2015;"Cases upheld";28;NA;NA;NA;NA;NA;NA;NA;NA
+"gender_discr_upheld_cases";2016;"Cases upheld";38;NA;NA;NA;NA;NA;NA;NA;NA
+"gender_discr_upheld_cases";2017;"Cases upheld";32;NA;NA;NA;NA;NA;NA;NA;NA
+"gender_discr_upheld_cases";2018;"Cases upheld";26;NA;NA;NA;NA;NA;NA;NA;NA
+"gender_discr_upheld_cases";2019;"Cases upheld";22;NA;NA;NA;NA;NA;NA;NA;NA
+"gender_discr_upheld_cases";2020;"Cases upheld";22;NA;NA;NA;NA;NA;NA;NA;NA
+"gender_discr_upheld_cases";2021;"Cases upheld";23;NA;NA;NA;NA;NA;NA;NA;NA
+"gender_discr_upheld_cases";2022;"Cases upheld";42;NA;NA;NA;NA;NA;NA;NA;NA
+"gender_discr_upheld_cases";2023;"Cases upheld";10;NA;NA;NA;NA;NA;NA;NA;NA
+"gender_discr_upheld_cases";2024;"Cases upheld";37;NA;NA;NA;NA;NA;NA;NA;NA
+"sick_days_per_employee";2015;NA;3,93;"Own sickness";"All sectors";"Men";"Under 20 years";NA;NA;NA;NA
+"sick_days_per_employee";2016;NA;4,23;"Own sickness";"All sectors";"Men";"Under 20 years";NA;NA;NA;NA
+"sick_days_per_employee";2017;NA;4,04;"Own sickness";"All sectors";"Men";"Under 20 years";NA;NA;NA;NA
+"sick_days_per_employee";2018;NA;4,1;"Own sickness";"All sectors";"Men";"Under 20 years";NA;NA;NA;NA
+"sick_days_per_employee";2019;NA;4,77;"Own sickness";"All sectors";"Men";"Under 20 years";NA;NA;NA;NA
+"sick_days_per_employee";2020;NA;4,63;"Own sickness";"All sectors";"Men";"Under 20 years";NA;NA;NA;NA
+"sick_days_per_employee";2021;NA;5,75;"Own sickness";"All sectors";"Men";"Under 20 years";NA;NA;NA;NA
+"sick_days_per_employee";2022;NA;6,19;"Own sickness";"All sectors";"Men";"Under 20 years";NA;NA;NA;NA
+"sick_days_per_employee";2023;NA;5,9;"Own sickness";"All sectors";"Men";"Under 20 years";NA;NA;NA;NA
+"sick_days_per_employee";2024;NA;5,95;"Own sickness";"All sectors";"Men";"Under 20 years";NA;NA;NA;NA
+"sick_days_per_employee";2015;NA;6,44;"Own sickness";"All sectors";"Men";"20-24 years";NA;NA;NA;NA
+"sick_days_per_employee";2016;NA;6,62;"Own sickness";"All sectors";"Men";"20-24 years";NA;NA;NA;NA
+"sick_days_per_employee";2017;NA;6,59;"Own sickness";"All sectors";"Men";"20-24 years";NA;NA;NA;NA
+"sick_days_per_employee";2018;NA;6,96;"Own sickness";"All sectors";"Men";"20-24 years";NA;NA;NA;NA
+"sick_days_per_employee";2019;NA;6,5;"Own sickness";"All sectors";"Men";"20-24 years";NA;NA;NA;NA
+"sick_days_per_employee";2020;NA;6,76;"Own sickness";"All sectors";"Men";"20-24 years";NA;NA;NA;NA
+"sick_days_per_employee";2021;NA;7,85;"Own sickness";"All sectors";"Men";"20-24 years";NA;NA;NA;NA
+"sick_days_per_employee";2022;NA;9,04;"Own sickness";"All sectors";"Men";"20-24 years";NA;NA;NA;NA
+"sick_days_per_employee";2023;NA;7,93;"Own sickness";"All sectors";"Men";"20-24 years";NA;NA;NA;NA
+"sick_days_per_employee";2024;NA;8,06;"Own sickness";"All sectors";"Men";"20-24 years";NA;NA;NA;NA
+"sick_days_per_employee";2015;NA;6,21;"Own sickness";"All sectors";"Men";"25-29 years";NA;NA;NA;NA
+"sick_days_per_employee";2016;NA;6,31;"Own sickness";"All sectors";"Men";"25-29 years";NA;NA;NA;NA
+"sick_days_per_employee";2017;NA;6,28;"Own sickness";"All sectors";"Men";"25-29 years";NA;NA;NA;NA
+"sick_days_per_employee";2018;NA;6,54;"Own sickness";"All sectors";"Men";"25-29 years";NA;NA;NA;NA
+"sick_days_per_employee";2019;NA;6,65;"Own sickness";"All sectors";"Men";"25-29 years";NA;NA;NA;NA
+"sick_days_per_employee";2020;NA;6,35;"Own sickness";"All sectors";"Men";"25-29 years";NA;NA;NA;NA
+"sick_days_per_employee";2021;NA;7,16;"Own sickness";"All sectors";"Men";"25-29 years";NA;NA;NA;NA
+"sick_days_per_employee";2022;NA;8,64;"Own sickness";"All sectors";"Men";"25-29 years";NA;NA;NA;NA
+"sick_days_per_employee";2023;NA;7,95;"Own sickness";"All sectors";"Men";"25-29 years";NA;NA;NA;NA
+"sick_days_per_employee";2024;NA;7,51;"Own sickness";"All sectors";"Men";"25-29 years";NA;NA;NA;NA
+"sick_days_per_employee";2015;NA;5,97;"Own sickness";"All sectors";"Men";"30-34 years";NA;NA;NA;NA
+"sick_days_per_employee";2016;NA;6,09;"Own sickness";"All sectors";"Men";"30-34 years";NA;NA;NA;NA
+"sick_days_per_employee";2017;NA;6,13;"Own sickness";"All sectors";"Men";"30-34 years";NA;NA;NA;NA
+"sick_days_per_employee";2018;NA;6,36;"Own sickness";"All sectors";"Men";"30-34 years";NA;NA;NA;NA
+"sick_days_per_employee";2019;NA;6,57;"Own sickness";"All sectors";"Men";"30-34 years";NA;NA;NA;NA
+"sick_days_per_employee";2020;NA;6,13;"Own sickness";"All sectors";"Men";"30-34 years";NA;NA;NA;NA
+"sick_days_per_employee";2021;NA;6,97;"Own sickness";"All sectors";"Men";"30-34 years";NA;NA;NA;NA
+"sick_days_per_employee";2022;NA;8,63;"Own sickness";"All sectors";"Men";"30-34 years";NA;NA;NA;NA
+"sick_days_per_employee";2023;NA;8,15;"Own sickness";"All sectors";"Men";"30-34 years";NA;NA;NA;NA
+"sick_days_per_employee";2024;NA;7,58;"Own sickness";"All sectors";"Men";"30-34 years";NA;NA;NA;NA
+"sick_days_per_employee";2015;NA;6,09;"Own sickness";"All sectors";"Men";"35-39 years";NA;NA;NA;NA
+"sick_days_per_employee";2016;NA;5,9;"Own sickness";"All sectors";"Men";"35-39 years";NA;NA;NA;NA
+"sick_days_per_employee";2017;NA;6;"Own sickness";"All sectors";"Men";"35-39 years";NA;NA;NA;NA
+"sick_days_per_employee";2018;NA;6,16;"Own sickness";"All sectors";"Men";"35-39 years";NA;NA;NA;NA
+"sick_days_per_employee";2019;NA;6,17;"Own sickness";"All sectors";"Men";"35-39 years";NA;NA;NA;NA
+"sick_days_per_employee";2020;NA;6,06;"Own sickness";"All sectors";"Men";"35-39 years";NA;NA;NA;NA
+"sick_days_per_employee";2021;NA;6,58;"Own sickness";"All sectors";"Men";"35-39 years";NA;NA;NA;NA
+"sick_days_per_employee";2022;NA;8,36;"Own sickness";"All sectors";"Men";"35-39 years";NA;NA;NA;NA
+"sick_days_per_employee";2023;NA;7,48;"Own sickness";"All sectors";"Men";"35-39 years";NA;NA;NA;NA
+"sick_days_per_employee";2024;NA;7,1;"Own sickness";"All sectors";"Men";"35-39 years";NA;NA;NA;NA
+"sick_days_per_employee";2015;NA;6;"Own sickness";"All sectors";"Men";"40-44 years";NA;NA;NA;NA
+"sick_days_per_employee";2016;NA;5,91;"Own sickness";"All sectors";"Men";"40-44 years";NA;NA;NA;NA
+"sick_days_per_employee";2017;NA;5,97;"Own sickness";"All sectors";"Men";"40-44 years";NA;NA;NA;NA
+"sick_days_per_employee";2018;NA;6,09;"Own sickness";"All sectors";"Men";"40-44 years";NA;NA;NA;NA
+"sick_days_per_employee";2019;NA;5,93;"Own sickness";"All sectors";"Men";"40-44 years";NA;NA;NA;NA
+"sick_days_per_employee";2020;NA;5,9;"Own sickness";"All sectors";"Men";"40-44 years";NA;NA;NA;NA
+"sick_days_per_employee";2021;NA;6,48;"Own sickness";"All sectors";"Men";"40-44 years";NA;NA;NA;NA
+"sick_days_per_employee";2022;NA;7,95;"Own sickness";"All sectors";"Men";"40-44 years";NA;NA;NA;NA
+"sick_days_per_employee";2023;NA;7,17;"Own sickness";"All sectors";"Men";"40-44 years";NA;NA;NA;NA
+"sick_days_per_employee";2024;NA;6,73;"Own sickness";"All sectors";"Men";"40-44 years";NA;NA;NA;NA
+"sick_days_per_employee";2015;NA;5,84;"Own sickness";"All sectors";"Men";"45-49 years";NA;NA;NA;NA
+"sick_days_per_employee";2016;NA;5,83;"Own sickness";"All sectors";"Men";"45-49 years";NA;NA;NA;NA
+"sick_days_per_employee";2017;NA;5,79;"Own sickness";"All sectors";"Men";"45-49 years";NA;NA;NA;NA
+"sick_days_per_employee";2018;NA;5,93;"Own sickness";"All sectors";"Men";"45-49 years";NA;NA;NA;NA
+"sick_days_per_employee";2019;NA;5,94;"Own sickness";"All sectors";"Men";"45-49 years";NA;NA;NA;NA
+"sick_days_per_employee";2020;NA;5,73;"Own sickness";"All sectors";"Men";"45-49 years";NA;NA;NA;NA
+"sick_days_per_employee";2021;NA;6,09;"Own sickness";"All sectors";"Men";"45-49 years";NA;NA;NA;NA
+"sick_days_per_employee";2022;NA;7,82;"Own sickness";"All sectors";"Men";"45-49 years";NA;NA;NA;NA
+"sick_days_per_employee";2023;NA;7,03;"Own sickness";"All sectors";"Men";"45-49 years";NA;NA;NA;NA
+"sick_days_per_employee";2024;NA;6,66;"Own sickness";"All sectors";"Men";"45-49 years";NA;NA;NA;NA
+"sick_days_per_employee";2015;NA;6,24;"Own sickness";"All sectors";"Men";"50-54 years";NA;NA;NA;NA
+"sick_days_per_employee";2016;NA;6,01;"Own sickness";"All sectors";"Men";"50-54 years";NA;NA;NA;NA
+"sick_days_per_employee";2017;NA;6;"Own sickness";"All sectors";"Men";"50-54 years";NA;NA;NA;NA
+"sick_days_per_employee";2018;NA;6,39;"Own sickness";"All sectors";"Men";"50-54 years";NA;NA;NA;NA
+"sick_days_per_employee";2019;NA;5,93;"Own sickness";"All sectors";"Men";"50-54 years";NA;NA;NA;NA
+"sick_days_per_employee";2020;NA;6,19;"Own sickness";"All sectors";"Men";"50-54 years";NA;NA;NA;NA
+"sick_days_per_employee";2021;NA;6,42;"Own sickness";"All sectors";"Men";"50-54 years";NA;NA;NA;NA
+"sick_days_per_employee";2022;NA;8,18;"Own sickness";"All sectors";"Men";"50-54 years";NA;NA;NA;NA
+"sick_days_per_employee";2023;NA;7,19;"Own sickness";"All sectors";"Men";"50-54 years";NA;NA;NA;NA
+"sick_days_per_employee";2024;NA;6,83;"Own sickness";"All sectors";"Men";"50-54 years";NA;NA;NA;NA
+"sick_days_per_employee";2015;NA;7,35;"Own sickness";"All sectors";"Men";"55-59 years";NA;NA;NA;NA
+"sick_days_per_employee";2016;NA;7,11;"Own sickness";"All sectors";"Men";"55-59 years";NA;NA;NA;NA
+"sick_days_per_employee";2017;NA;6,87;"Own sickness";"All sectors";"Men";"55-59 years";NA;NA;NA;NA
+"sick_days_per_employee";2018;NA;6,9;"Own sickness";"All sectors";"Men";"55-59 years";NA;NA;NA;NA
+"sick_days_per_employee";2019;NA;7,03;"Own sickness";"All sectors";"Men";"55-59 years";NA;NA;NA;NA
+"sick_days_per_employee";2020;NA;6,7;"Own sickness";"All sectors";"Men";"55-59 years";NA;NA;NA;NA
+"sick_days_per_employee";2021;NA;7,28;"Own sickness";"All sectors";"Men";"55-59 years";NA;NA;NA;NA
+"sick_days_per_employee";2022;NA;8,86;"Own sickness";"All sectors";"Men";"55-59 years";NA;NA;NA;NA
+"sick_days_per_employee";2023;NA;7,83;"Own sickness";"All sectors";"Men";"55-59 years";NA;NA;NA;NA
+"sick_days_per_employee";2024;NA;7,54;"Own sickness";"All sectors";"Men";"55-59 years";NA;NA;NA;NA
+"sick_days_per_employee";2015;NA;7,44;"Own sickness";"All sectors";"Men";"60 years and over";NA;NA;NA;NA
+"sick_days_per_employee";2016;NA;7,29;"Own sickness";"All sectors";"Men";"60 years and over";NA;NA;NA;NA
+"sick_days_per_employee";2017;NA;7,33;"Own sickness";"All sectors";"Men";"60 years and over";NA;NA;NA;NA
+"sick_days_per_employee";2018;NA;8,08;"Own sickness";"All sectors";"Men";"60 years and over";NA;NA;NA;NA
+"sick_days_per_employee";2019;NA;7,58;"Own sickness";"All sectors";"Men";"60 years and over";NA;NA;NA;NA
+"sick_days_per_employee";2020;NA;7,69;"Own sickness";"All sectors";"Men";"60 years and over";NA;NA;NA;NA
+"sick_days_per_employee";2021;NA;8,28;"Own sickness";"All sectors";"Men";"60 years and over";NA;NA;NA;NA
+"sick_days_per_employee";2022;NA;9,73;"Own sickness";"All sectors";"Men";"60 years and over";NA;NA;NA;NA
+"sick_days_per_employee";2023;NA;9,13;"Own sickness";"All sectors";"Men";"60 years and over";NA;NA;NA;NA
+"sick_days_per_employee";2024;NA;8,43;"Own sickness";"All sectors";"Men";"60 years and over";NA;NA;NA;NA
+"sick_days_per_employee";2015;NA;5,26;"Own sickness";"All sectors";"Women";"Under 20 years";NA;NA;NA;NA
+"sick_days_per_employee";2016;NA;5,8;"Own sickness";"All sectors";"Women";"Under 20 years";NA;NA;NA;NA
+"sick_days_per_employee";2017;NA;4,96;"Own sickness";"All sectors";"Women";"Under 20 years";NA;NA;NA;NA
+"sick_days_per_employee";2018;NA;4,55;"Own sickness";"All sectors";"Women";"Under 20 years";NA;NA;NA;NA
+"sick_days_per_employee";2019;NA;4,94;"Own sickness";"All sectors";"Women";"Under 20 years";NA;NA;NA;NA
+"sick_days_per_employee";2020;NA;5,18;"Own sickness";"All sectors";"Women";"Under 20 years";NA;NA;NA;NA
+"sick_days_per_employee";2021;NA;6,16;"Own sickness";"All sectors";"Women";"Under 20 years";NA;NA;NA;NA
+"sick_days_per_employee";2022;NA;7,14;"Own sickness";"All sectors";"Women";"Under 20 years";NA;NA;NA;NA
+"sick_days_per_employee";2023;NA;7;"Own sickness";"All sectors";"Women";"Under 20 years";NA;NA;NA;NA
+"sick_days_per_employee";2024;NA;6,71;"Own sickness";"All sectors";"Women";"Under 20 years";NA;NA;NA;NA
+"sick_days_per_employee";2015;NA;9,36;"Own sickness";"All sectors";"Women";"20-24 years";NA;NA;NA;NA
+"sick_days_per_employee";2016;NA;9,12;"Own sickness";"All sectors";"Women";"20-24 years";NA;NA;NA;NA
+"sick_days_per_employee";2017;NA;8,31;"Own sickness";"All sectors";"Women";"20-24 years";NA;NA;NA;NA
+"sick_days_per_employee";2018;NA;8,8;"Own sickness";"All sectors";"Women";"20-24 years";NA;NA;NA;NA
+"sick_days_per_employee";2019;NA;9,31;"Own sickness";"All sectors";"Women";"20-24 years";NA;NA;NA;NA
+"sick_days_per_employee";2020;NA;8,97;"Own sickness";"All sectors";"Women";"20-24 years";NA;NA;NA;NA
+"sick_days_per_employee";2021;NA;10,33;"Own sickness";"All sectors";"Women";"20-24 years";NA;NA;NA;NA
+"sick_days_per_employee";2022;NA;11,96;"Own sickness";"All sectors";"Women";"20-24 years";NA;NA;NA;NA
+"sick_days_per_employee";2023;NA;10,9;"Own sickness";"All sectors";"Women";"20-24 years";NA;NA;NA;NA
+"sick_days_per_employee";2024;NA;10,33;"Own sickness";"All sectors";"Women";"20-24 years";NA;NA;NA;NA
+"sick_days_per_employee";2015;NA;11,24;"Own sickness";"All sectors";"Women";"25-29 years";NA;NA;NA;NA
+"sick_days_per_employee";2016;NA;11,39;"Own sickness";"All sectors";"Women";"25-29 years";NA;NA;NA;NA
+"sick_days_per_employee";2017;NA;11;"Own sickness";"All sectors";"Women";"25-29 years";NA;NA;NA;NA
+"sick_days_per_employee";2018;NA;11,4;"Own sickness";"All sectors";"Women";"25-29 years";NA;NA;NA;NA
+"sick_days_per_employee";2019;NA;11,63;"Own sickness";"All sectors";"Women";"25-29 years";NA;NA;NA;NA
+"sick_days_per_employee";2020;NA;11,92;"Own sickness";"All sectors";"Women";"25-29 years";NA;NA;NA;NA
+"sick_days_per_employee";2021;NA;12,61;"Own sickness";"All sectors";"Women";"25-29 years";NA;NA;NA;NA
+"sick_days_per_employee";2022;NA;14,02;"Own sickness";"All sectors";"Women";"25-29 years";NA;NA;NA;NA
+"sick_days_per_employee";2023;NA;13,36;"Own sickness";"All sectors";"Women";"25-29 years";NA;NA;NA;NA
+"sick_days_per_employee";2024;NA;13;"Own sickness";"All sectors";"Women";"25-29 years";NA;NA;NA;NA
+"sick_days_per_employee";2015;NA;11,66;"Own sickness";"All sectors";"Women";"30-34 years";NA;NA;NA;NA
+"sick_days_per_employee";2016;NA;11,45;"Own sickness";"All sectors";"Women";"30-34 years";NA;NA;NA;NA
+"sick_days_per_employee";2017;NA;11,55;"Own sickness";"All sectors";"Women";"30-34 years";NA;NA;NA;NA
+"sick_days_per_employee";2018;NA;11,52;"Own sickness";"All sectors";"Women";"30-34 years";NA;NA;NA;NA
+"sick_days_per_employee";2019;NA;12,27;"Own sickness";"All sectors";"Women";"30-34 years";NA;NA;NA;NA
+"sick_days_per_employee";2020;NA;12,41;"Own sickness";"All sectors";"Women";"30-34 years";NA;NA;NA;NA
+"sick_days_per_employee";2021;NA;13,01;"Own sickness";"All sectors";"Women";"30-34 years";NA;NA;NA;NA
+"sick_days_per_employee";2022;NA;14,35;"Own sickness";"All sectors";"Women";"30-34 years";NA;NA;NA;NA
+"sick_days_per_employee";2023;NA;14,35;"Own sickness";"All sectors";"Women";"30-34 years";NA;NA;NA;NA
+"sick_days_per_employee";2024;NA;13,95;"Own sickness";"All sectors";"Women";"30-34 years";NA;NA;NA;NA
+"sick_days_per_employee";2015;NA;11,36;"Own sickness";"All sectors";"Women";"35-39 years";NA;NA;NA;NA
+"sick_days_per_employee";2016;NA;10,93;"Own sickness";"All sectors";"Women";"35-39 years";NA;NA;NA;NA
+"sick_days_per_employee";2017;NA;10,64;"Own sickness";"All sectors";"Women";"35-39 years";NA;NA;NA;NA
+"sick_days_per_employee";2018;NA;10,93;"Own sickness";"All sectors";"Women";"35-39 years";NA;NA;NA;NA
+"sick_days_per_employee";2019;NA;11,28;"Own sickness";"All sectors";"Women";"35-39 years";NA;NA;NA;NA
+"sick_days_per_employee";2020;NA;11,29;"Own sickness";"All sectors";"Women";"35-39 years";NA;NA;NA;NA
+"sick_days_per_employee";2021;NA;12,12;"Own sickness";"All sectors";"Women";"35-39 years";NA;NA;NA;NA
+"sick_days_per_employee";2022;NA;14,26;"Own sickness";"All sectors";"Women";"35-39 years";NA;NA;NA;NA
+"sick_days_per_employee";2023;NA;13,45;"Own sickness";"All sectors";"Women";"35-39 years";NA;NA;NA;NA
+"sick_days_per_employee";2024;NA;12,89;"Own sickness";"All sectors";"Women";"35-39 years";NA;NA;NA;NA
+"sick_days_per_employee";2015;NA;10,6;"Own sickness";"All sectors";"Women";"40-44 years";NA;NA;NA;NA
+"sick_days_per_employee";2016;NA;10,5;"Own sickness";"All sectors";"Women";"40-44 years";NA;NA;NA;NA
+"sick_days_per_employee";2017;NA;10,34;"Own sickness";"All sectors";"Women";"40-44 years";NA;NA;NA;NA
+"sick_days_per_employee";2018;NA;10,59;"Own sickness";"All sectors";"Women";"40-44 years";NA;NA;NA;NA
+"sick_days_per_employee";2019;NA;10,38;"Own sickness";"All sectors";"Women";"40-44 years";NA;NA;NA;NA
+"sick_days_per_employee";2020;NA;10,59;"Own sickness";"All sectors";"Women";"40-44 years";NA;NA;NA;NA
+"sick_days_per_employee";2021;NA;11,34;"Own sickness";"All sectors";"Women";"40-44 years";NA;NA;NA;NA
+"sick_days_per_employee";2022;NA;13,29;"Own sickness";"All sectors";"Women";"40-44 years";NA;NA;NA;NA
+"sick_days_per_employee";2023;NA;12,51;"Own sickness";"All sectors";"Women";"40-44 years";NA;NA;NA;NA
+"sick_days_per_employee";2024;NA;11,83;"Own sickness";"All sectors";"Women";"40-44 years";NA;NA;NA;NA
+"sick_days_per_employee";2015;NA;10,72;"Own sickness";"All sectors";"Women";"45-49 years";NA;NA;NA;NA
+"sick_days_per_employee";2016;NA;10,12;"Own sickness";"All sectors";"Women";"45-49 years";NA;NA;NA;NA
+"sick_days_per_employee";2017;NA;9,96;"Own sickness";"All sectors";"Women";"45-49 years";NA;NA;NA;NA
+"sick_days_per_employee";2018;NA;10,15;"Own sickness";"All sectors";"Women";"45-49 years";NA;NA;NA;NA
+"sick_days_per_employee";2019;NA;10,21;"Own sickness";"All sectors";"Women";"45-49 years";NA;NA;NA;NA
+"sick_days_per_employee";2020;NA;10,15;"Own sickness";"All sectors";"Women";"45-49 years";NA;NA;NA;NA
+"sick_days_per_employee";2021;NA;10,96;"Own sickness";"All sectors";"Women";"45-49 years";NA;NA;NA;NA
+"sick_days_per_employee";2022;NA;13,01;"Own sickness";"All sectors";"Women";"45-49 years";NA;NA;NA;NA
+"sick_days_per_employee";2023;NA;12,07;"Own sickness";"All sectors";"Women";"45-49 years";NA;NA;NA;NA
+"sick_days_per_employee";2024;NA;11,18;"Own sickness";"All sectors";"Women";"45-49 years";NA;NA;NA;NA
+"sick_days_per_employee";2015;NA;10,9;"Own sickness";"All sectors";"Women";"50-54 years";NA;NA;NA;NA
+"sick_days_per_employee";2016;NA;10,55;"Own sickness";"All sectors";"Women";"50-54 years";NA;NA;NA;NA
+"sick_days_per_employee";2017;NA;10,57;"Own sickness";"All sectors";"Women";"50-54 years";NA;NA;NA;NA
+"sick_days_per_employee";2018;NA;10,73;"Own sickness";"All sectors";"Women";"50-54 years";NA;NA;NA;NA
+"sick_days_per_employee";2019;NA;10,61;"Own sickness";"All sectors";"Women";"50-54 years";NA;NA;NA;NA
+"sick_days_per_employee";2020;NA;10,52;"Own sickness";"All sectors";"Women";"50-54 years";NA;NA;NA;NA
+"sick_days_per_employee";2021;NA;11,35;"Own sickness";"All sectors";"Women";"50-54 years";NA;NA;NA;NA
+"sick_days_per_employee";2022;NA;13,14;"Own sickness";"All sectors";"Women";"50-54 years";NA;NA;NA;NA
+"sick_days_per_employee";2023;NA;12,28;"Own sickness";"All sectors";"Women";"50-54 years";NA;NA;NA;NA
+"sick_days_per_employee";2024;NA;11,49;"Own sickness";"All sectors";"Women";"50-54 years";NA;NA;NA;NA
+"sick_days_per_employee";2015;NA;11,43;"Own sickness";"All sectors";"Women";"55-59 years";NA;NA;NA;NA
+"sick_days_per_employee";2016;NA;11,22;"Own sickness";"All sectors";"Women";"55-59 years";NA;NA;NA;NA
+"sick_days_per_employee";2017;NA;11,01;"Own sickness";"All sectors";"Women";"55-59 years";NA;NA;NA;NA
+"sick_days_per_employee";2018;NA;11,45;"Own sickness";"All sectors";"Women";"55-59 years";NA;NA;NA;NA
+"sick_days_per_employee";2019;NA;11,34;"Own sickness";"All sectors";"Women";"55-59 years";NA;NA;NA;NA
+"sick_days_per_employee";2020;NA;10,98;"Own sickness";"All sectors";"Women";"55-59 years";NA;NA;NA;NA
+"sick_days_per_employee";2021;NA;11,72;"Own sickness";"All sectors";"Women";"55-59 years";NA;NA;NA;NA
+"sick_days_per_employee";2022;NA;13,59;"Own sickness";"All sectors";"Women";"55-59 years";NA;NA;NA;NA
+"sick_days_per_employee";2023;NA;13,15;"Own sickness";"All sectors";"Women";"55-59 years";NA;NA;NA;NA
+"sick_days_per_employee";2024;NA;12,02;"Own sickness";"All sectors";"Women";"55-59 years";NA;NA;NA;NA
+"sick_days_per_employee";2015;NA;10,83;"Own sickness";"All sectors";"Women";"60 years and over";NA;NA;NA;NA
+"sick_days_per_employee";2016;NA;10,66;"Own sickness";"All sectors";"Women";"60 years and over";NA;NA;NA;NA
+"sick_days_per_employee";2017;NA;11,19;"Own sickness";"All sectors";"Women";"60 years and over";NA;NA;NA;NA
+"sick_days_per_employee";2018;NA;11,88;"Own sickness";"All sectors";"Women";"60 years and over";NA;NA;NA;NA
+"sick_days_per_employee";2019;NA;11,96;"Own sickness";"All sectors";"Women";"60 years and over";NA;NA;NA;NA
+"sick_days_per_employee";2020;NA;12,18;"Own sickness";"All sectors";"Women";"60 years and over";NA;NA;NA;NA
+"sick_days_per_employee";2021;NA;13,03;"Own sickness";"All sectors";"Women";"60 years and over";NA;NA;NA;NA
+"sick_days_per_employee";2022;NA;15,49;"Own sickness";"All sectors";"Women";"60 years and over";NA;NA;NA;NA
+"sick_days_per_employee";2023;NA;14,38;"Own sickness";"All sectors";"Women";"60 years and over";NA;NA;NA;NA
+"sick_days_per_employee";2024;NA;13,19;"Own sickness";"All sectors";"Women";"60 years and over";NA;NA;NA;NA
+"palma_ratio";2015;NA;4,17;NA;NA;NA;NA;"Palma coefficient";NA;NA;NA
+"palma_ratio";2016;NA;4,19;NA;NA;NA;NA;"Palma coefficient";NA;NA;NA
+"palma_ratio";2017;NA;4,28;NA;NA;NA;NA;"Palma coefficient";NA;NA;NA
+"palma_ratio";2018;NA;4,21;NA;NA;NA;NA;"Palma coefficient";NA;NA;NA
+"palma_ratio";2019;NA;4,35;NA;NA;NA;NA;"Palma coefficient";NA;NA;NA
+"palma_ratio";2020;NA;4,38;NA;NA;NA;NA;"Palma coefficient";NA;NA;NA
+"palma_ratio";2021;NA;4,54;NA;NA;NA;NA;"Palma coefficient";NA;NA;NA
+"palma_ratio";2022;NA;4,44;NA;NA;NA;NA;"Palma coefficient";NA;NA;NA
+"palma_ratio";2023;NA;4,63;NA;NA;NA;NA;"Palma coefficient";NA;NA;NA
+"palma_ratio";2015;NA;607665;NA;NA;NA;NA;"10. decil";NA;NA;NA
+"palma_ratio";2016;NA;615554;NA;NA;NA;NA;"10. decil";NA;NA;NA
+"palma_ratio";2017;NA;641188;NA;NA;NA;NA;"10. decil";NA;NA;NA
+"palma_ratio";2018;NA;648231;NA;NA;NA;NA;"10. decil";NA;NA;NA
+"palma_ratio";2019;NA;688377;NA;NA;NA;NA;"10. decil";NA;NA;NA
+"palma_ratio";2020;NA;719999;NA;NA;NA;NA;"10. decil";NA;NA;NA
+"palma_ratio";2021;NA;779827;NA;NA;NA;NA;"10. decil";NA;NA;NA
+"palma_ratio";2022;NA;769052;NA;NA;NA;NA;"10. decil";NA;NA;NA
+"palma_ratio";2023;NA;834074;NA;NA;NA;NA;"10. decil";NA;NA;NA
+"palma_ratio";2015;NA;280073;NA;NA;NA;NA;"5.-9. decil";NA;NA;NA
+"palma_ratio";2016;NA;285923,4;NA;NA;NA;NA;"5.-9. decil";NA;NA;NA
+"palma_ratio";2017;NA;293559,4;NA;NA;NA;NA;"5.-9. decil";NA;NA;NA
+"palma_ratio";2018;NA;301797;NA;NA;NA;NA;"5.-9. decil";NA;NA;NA
+"palma_ratio";2019;NA;309133,2;NA;NA;NA;NA;"5.-9. decil";NA;NA;NA
+"palma_ratio";2020;NA;324311,8;NA;NA;NA;NA;"5.-9. decil";NA;NA;NA
+"palma_ratio";2021;NA;337415,6;NA;NA;NA;NA;"5.-9. decil";NA;NA;NA
+"palma_ratio";2022;NA;339147;NA;NA;NA;NA;"5.-9. decil";NA;NA;NA
+"palma_ratio";2023;NA;348955;NA;NA;NA;NA;"5.-9. decil";NA;NA;NA
+"palma_ratio";2015;NA;145792;NA;NA;NA;NA;"1.-4. decil";NA;NA;NA
+"palma_ratio";2016;NA;146822;NA;NA;NA;NA;"1.-4. decil";NA;NA;NA
+"palma_ratio";2017;NA;149916,25;NA;NA;NA;NA;"1.-4. decil";NA;NA;NA
+"palma_ratio";2018;NA;153798,75;NA;NA;NA;NA;"1.-4. decil";NA;NA;NA
+"palma_ratio";2019;NA;158384,5;NA;NA;NA;NA;"1.-4. decil";NA;NA;NA
+"palma_ratio";2020;NA;164370;NA;NA;NA;NA;"1.-4. decil";NA;NA;NA
+"palma_ratio";2021;NA;171690,5;NA;NA;NA;NA;"1.-4. decil";NA;NA;NA
+"palma_ratio";2022;NA;173142;NA;NA;NA;NA;"1.-4. decil";NA;NA;NA
+"palma_ratio";2023;NA;180047;NA;NA;NA;NA;"1.-4. decil";NA;NA;NA
+"low_income_share";2015;NA;7,7;NA;NA;NA;NA;NA;"1 year";NA;NA
+"low_income_share";2016;NA;8,3;NA;NA;NA;NA;NA;"1 year";NA;NA
+"low_income_share";2017;NA;8,8;NA;NA;NA;NA;NA;"1 year";NA;NA
+"low_income_share";2018;NA;8,7;NA;NA;NA;NA;NA;"1 year";NA;NA
+"low_income_share";2019;NA;8,6;NA;NA;NA;NA;NA;"1 year";NA;NA
+"low_income_share";2020;NA;8,7;NA;NA;NA;NA;NA;"1 year";NA;NA
+"low_income_share";2021;NA;8,4;NA;NA;NA;NA;NA;"1 year";NA;NA
+"low_income_share";2022;NA;8,1;NA;NA;NA;NA;NA;"1 year";NA;NA
+"low_income_share";2023;NA;8;NA;NA;NA;NA;NA;"1 year";NA;NA
+"low_income_share";2015;NA;4,7;NA;NA;NA;NA;NA;"2 year in a row";NA;NA
+"low_income_share";2016;NA;4,9;NA;NA;NA;NA;NA;"2 year in a row";NA;NA
+"low_income_share";2017;NA;5,4;NA;NA;NA;NA;NA;"2 year in a row";NA;NA
+"low_income_share";2018;NA;5,7;NA;NA;NA;NA;NA;"2 year in a row";NA;NA
+"low_income_share";2019;NA;5,6;NA;NA;NA;NA;NA;"2 year in a row";NA;NA
+"low_income_share";2020;NA;5,6;NA;NA;NA;NA;NA;"2 year in a row";NA;NA
+"low_income_share";2021;NA;5,5;NA;NA;NA;NA;NA;"2 year in a row";NA;NA
+"low_income_share";2022;NA;5,2;NA;NA;NA;NA;NA;"2 year in a row";NA;NA
+"low_income_share";2023;NA;5;NA;NA;NA;NA;NA;"2 year in a row";NA;NA
+"low_income_share";2015;NA;3,1;NA;NA;NA;NA;NA;"3 year in a row";NA;NA
+"low_income_share";2016;NA;3,3;NA;NA;NA;NA;NA;"3 year in a row";NA;NA
+"low_income_share";2017;NA;3,5;NA;NA;NA;NA;NA;"3 year in a row";NA;NA
+"low_income_share";2018;NA;3,8;NA;NA;NA;NA;NA;"3 year in a row";NA;NA
+"low_income_share";2019;NA;4;NA;NA;NA;NA;NA;"3 year in a row";NA;NA
+"low_income_share";2020;NA;4;NA;NA;NA;NA;NA;"3 year in a row";NA;NA
+"low_income_share";2021;NA;3,9;NA;NA;NA;NA;NA;"3 year in a row";NA;NA
+"low_income_share";2022;NA;3,7;NA;NA;NA;NA;NA;"3 year in a row";NA;NA
+"low_income_share";2023;NA;3,6;NA;NA;NA;NA;NA;"3 year in a row";NA;NA
+"low_income_share";2015;NA;2,1;NA;NA;NA;NA;NA;"4 year in a row";NA;NA
+"low_income_share";2016;NA;2,3;NA;NA;NA;NA;NA;"4 year in a row";NA;NA
+"low_income_share";2017;NA;2,4;NA;NA;NA;NA;NA;"4 year in a row";NA;NA
+"low_income_share";2018;NA;2,5;NA;NA;NA;NA;NA;"4 year in a row";NA;NA
+"low_income_share";2019;NA;2,8;NA;NA;NA;NA;NA;"4 year in a row";NA;NA
+"low_income_share";2020;NA;3;NA;NA;NA;NA;NA;"4 year in a row";NA;NA
+"low_income_share";2021;NA;2,9;NA;NA;NA;NA;NA;"4 year in a row";NA;NA
+"low_income_share";2022;NA;2,8;NA;NA;NA;NA;NA;"4 year in a row";NA;NA
+"low_income_share";2023;NA;2,7;NA;NA;NA;NA;NA;"4 year in a row";NA;NA
+"social_benefits_share";2015;NA;21,4;NA;NA;NA;NA;NA;NA;"Total without Danish State Education Grant and Loan Scheme Authority";NA
+"social_benefits_share";2016;NA;20,8;NA;NA;NA;NA;NA;NA;"Total without Danish State Education Grant and Loan Scheme Authority";NA
+"social_benefits_share";2017;NA;20,2;NA;NA;NA;NA;NA;NA;"Total without Danish State Education Grant and Loan Scheme Authority";NA
+"social_benefits_share";2018;NA;19,5;NA;NA;NA;NA;NA;NA;"Total without Danish State Education Grant and Loan Scheme Authority";NA
+"social_benefits_share";2019;NA;19,5;NA;NA;NA;NA;NA;NA;"Total without Danish State Education Grant and Loan Scheme Authority";NA
+"social_benefits_share";2020;NA;20,6;NA;NA;NA;NA;NA;NA;"Total without Danish State Education Grant and Loan Scheme Authority";NA
+"social_benefits_share";2021;NA;20,5;NA;NA;NA;NA;NA;NA;"Total without Danish State Education Grant and Loan Scheme Authority";NA
+"social_benefits_share";2022;NA;20;NA;NA;NA;NA;NA;NA;"Total without Danish State Education Grant and Loan Scheme Authority";NA
+"social_benefits_share";2023;NA;20;NA;NA;NA;NA;NA;NA;"Total without Danish State Education Grant and Loan Scheme Authority";NA
+"social_benefits_share";2024;NA;20,2;NA;NA;NA;NA;NA;NA;"Total without Danish State Education Grant and Loan Scheme Authority";NA
+"social_benefits_share";2015;NA;2,8;NA;NA;NA;NA;NA;NA;"Net unemployment, total";NA
+"social_benefits_share";2016;NA;2,5;NA;NA;NA;NA;NA;NA;"Net unemployment, total";NA
+"social_benefits_share";2017;NA;2,5;NA;NA;NA;NA;NA;NA;"Net unemployment, total";NA
+"social_benefits_share";2018;NA;2,4;NA;NA;NA;NA;NA;NA;"Net unemployment, total";NA
+"social_benefits_share";2019;NA;2,4;NA;NA;NA;NA;NA;NA;"Net unemployment, total";NA
+"social_benefits_share";2020;NA;3,2;NA;NA;NA;NA;NA;NA;"Net unemployment, total";NA
+"social_benefits_share";2021;NA;2,5;NA;NA;NA;NA;NA;NA;"Net unemployment, total";NA
+"social_benefits_share";2022;NA;1,7;NA;NA;NA;NA;NA;NA;"Net unemployment, total";NA
+"social_benefits_share";2023;NA;1,9;NA;NA;NA;NA;NA;NA;"Net unemployment, total";NA
+"social_benefits_share";2024;NA;2,1;NA;NA;NA;NA;NA;NA;"Net unemployment, total";NA
+"social_benefits_share";2015;NA;0,1;NA;NA;NA;NA;NA;NA;"Persons receiving holiday benefits";NA
+"social_benefits_share";2016;NA;0,1;NA;NA;NA;NA;NA;NA;"Persons receiving holiday benefits";NA
+"social_benefits_share";2017;NA;0,1;NA;NA;NA;NA;NA;NA;"Persons receiving holiday benefits";NA
+"social_benefits_share";2018;NA;0,1;NA;NA;NA;NA;NA;NA;"Persons receiving holiday benefits";NA
+"social_benefits_share";2019;NA;0,1;NA;NA;NA;NA;NA;NA;"Persons receiving holiday benefits";NA
+"social_benefits_share";2020;NA;0,1;NA;NA;NA;NA;NA;NA;"Persons receiving holiday benefits";NA
+"social_benefits_share";2021;NA;0,1;NA;NA;NA;NA;NA;NA;"Persons receiving holiday benefits";NA
+"social_benefits_share";2022;NA;0,1;NA;NA;NA;NA;NA;NA;"Persons receiving holiday benefits";NA
+"social_benefits_share";2023;NA;0,1;NA;NA;NA;NA;NA;NA;"Persons receiving holiday benefits";NA
+"social_benefits_share";2024;NA;0,1;NA;NA;NA;NA;NA;NA;"Persons receiving holiday benefits";NA
+"social_benefits_share";2015;NA;1;NA;NA;NA;NA;NA;NA;"Guidance and activities upgrading skills, total";NA
+"social_benefits_share";2016;NA;1,1;NA;NA;NA;NA;NA;NA;"Guidance and activities upgrading skills, total";NA
+"social_benefits_share";2017;NA;1;NA;NA;NA;NA;NA;NA;"Guidance and activities upgrading skills, total";NA
+"social_benefits_share";2018;NA;0,9;NA;NA;NA;NA;NA;NA;"Guidance and activities upgrading skills, total";NA
+"social_benefits_share";2019;NA;0,7;NA;NA;NA;NA;NA;NA;"Guidance and activities upgrading skills, total";NA
+"social_benefits_share";2020;NA;0,6;NA;NA;NA;NA;NA;NA;"Guidance and activities upgrading skills, total";NA
+"social_benefits_share";2021;NA;0,6;NA;NA;NA;NA;NA;NA;"Guidance and activities upgrading skills, total";NA
+"social_benefits_share";2022;NA;0,5;NA;NA;NA;NA;NA;NA;"Guidance and activities upgrading skills, total";NA
+"social_benefits_share";2023;NA;0,4;NA;NA;NA;NA;NA;NA;"Guidance and activities upgrading skills, total";NA
+"social_benefits_share";2024;NA;0,4;NA;NA;NA;NA;NA;NA;"Guidance and activities upgrading skills, total";NA
+"social_benefits_share";2015;NA;2,7;NA;NA;NA;NA;NA;NA;"Subsidized employment, total";NA
+"social_benefits_share";2016;NA;2,8;NA;NA;NA;NA;NA;NA;"Subsidized employment, total";NA
+"social_benefits_share";2017;NA;2,8;NA;NA;NA;NA;NA;NA;"Subsidized employment, total";NA
+"social_benefits_share";2018;NA;2,8;NA;NA;NA;NA;NA;NA;"Subsidized employment, total";NA
+"social_benefits_share";2019;NA;2,9;NA;NA;NA;NA;NA;NA;"Subsidized employment, total";NA
+"social_benefits_share";2020;NA;2,7;NA;NA;NA;NA;NA;NA;"Subsidized employment, total";NA
+"social_benefits_share";2021;NA;2,8;NA;NA;NA;NA;NA;NA;"Subsidized employment, total";NA
+"social_benefits_share";2022;NA;3;NA;NA;NA;NA;NA;NA;"Subsidized employment, total";NA
+"social_benefits_share";2023;NA;3,1;NA;NA;NA;NA;NA;NA;"Subsidized employment, total";NA
+"social_benefits_share";2024;NA;3,2;NA;NA;NA;NA;NA;NA;"Subsidized employment, total";NA
+"social_benefits_share";2015;NA;1,3;NA;NA;NA;NA;NA;NA;"Maternity benefits, etc. total";NA
+"social_benefits_share";2016;NA;1,3;NA;NA;NA;NA;NA;NA;"Maternity benefits, etc. total";NA
+"social_benefits_share";2017;NA;1,4;NA;NA;NA;NA;NA;NA;"Maternity benefits, etc. total";NA
+"social_benefits_share";2018;NA;1,4;NA;NA;NA;NA;NA;NA;"Maternity benefits, etc. total";NA
+"social_benefits_share";2019;NA;1,4;NA;NA;NA;NA;NA;NA;"Maternity benefits, etc. total";NA
+"social_benefits_share";2020;NA;1,4;NA;NA;NA;NA;NA;NA;"Maternity benefits, etc. total";NA
+"social_benefits_share";2021;NA;1,4;NA;NA;NA;NA;NA;NA;"Maternity benefits, etc. total";NA
+"social_benefits_share";2022;NA;1,4;NA;NA;NA;NA;NA;NA;"Maternity benefits, etc. total";NA
+"social_benefits_share";2023;NA;1,3;NA;NA;NA;NA;NA;NA;"Maternity benefits, etc. total";NA
+"social_benefits_share";2024;NA;0;NA;NA;NA;NA;NA;NA;"Maternity benefits, etc. total";NA
+"social_benefits_share";2015;NA;8,4;NA;NA;NA;NA;NA;NA;"Retirement, total";NA
+"social_benefits_share";2016;NA;7,8;NA;NA;NA;NA;NA;NA;"Retirement, total";NA
+"social_benefits_share";2017;NA;7,3;NA;NA;NA;NA;NA;NA;"Retirement, total";NA
+"social_benefits_share";2018;NA;6,9;NA;NA;NA;NA;NA;NA;"Retirement, total";NA
+"social_benefits_share";2019;NA;6,9;NA;NA;NA;NA;NA;NA;"Retirement, total";NA
+"social_benefits_share";2020;NA;7,1;NA;NA;NA;NA;NA;NA;"Retirement, total";NA
+"social_benefits_share";2021;NA;7,6;NA;NA;NA;NA;NA;NA;"Retirement, total";NA
+"social_benefits_share";2022;NA;8;NA;NA;NA;NA;NA;NA;"Retirement, total";NA
+"social_benefits_share";2023;NA;8,1;NA;NA;NA;NA;NA;NA;"Retirement, total";NA
+"social_benefits_share";2024;NA;8,3;NA;NA;NA;NA;NA;NA;"Retirement, total";NA
+"social_benefits_share";2015;NA;5,1;NA;NA;NA;NA;NA;NA;"Other social benefits, total";NA
+"social_benefits_share";2016;NA;5,2;NA;NA;NA;NA;NA;NA;"Other social benefits, total";NA
+"social_benefits_share";2017;NA;5,1;NA;NA;NA;NA;NA;NA;"Other social benefits, total";NA
+"social_benefits_share";2018;NA;5;NA;NA;NA;NA;NA;NA;"Other social benefits, total";NA
+"social_benefits_share";2019;NA;5,1;NA;NA;NA;NA;NA;NA;"Other social benefits, total";NA
+"social_benefits_share";2020;NA;5,5;NA;NA;NA;NA;NA;NA;"Other social benefits, total";NA
+"social_benefits_share";2021;NA;5,4;NA;NA;NA;NA;NA;NA;"Other social benefits, total";NA
+"social_benefits_share";2022;NA;5,3;NA;NA;NA;NA;NA;NA;"Other social benefits, total";NA
+"social_benefits_share";2023;NA;5;NA;NA;NA;NA;NA;NA;"Other social benefits, total";NA
+"social_benefits_share";2024;NA;4,8;NA;NA;NA;NA;NA;NA;"Other social benefits, total";NA
+"completed_lower_secondary_share";2015;NA;98,9;NA;NA;NA;NA;NA;NA;NA;"18 years old, who have completed primary school"
+"completed_lower_secondary_share";2016;NA;98,8;NA;NA;NA;NA;NA;NA;NA;"18 years old, who have completed primary school"
+"completed_lower_secondary_share";2017;NA;99;NA;NA;NA;NA;NA;NA;NA;"18 years old, who have completed primary school"
+"completed_lower_secondary_share";2018;NA;99;NA;NA;NA;NA;NA;NA;NA;"18 years old, who have completed primary school"
+"completed_lower_secondary_share";2019;NA;99,2;NA;NA;NA;NA;NA;NA;NA;"18 years old, who have completed primary school"
+"completed_lower_secondary_share";2020;NA;99,1;NA;NA;NA;NA;NA;NA;NA;"18 years old, who have completed primary school"
+"completed_lower_secondary_share";2021;NA;99,1;NA;NA;NA;NA;NA;NA;NA;"18 years old, who have completed primary school"
+"completed_lower_secondary_share";2022;NA;99,2;NA;NA;NA;NA;NA;NA;NA;"18 years old, who have completed primary school"
+"completed_lower_secondary_share";2023;NA;99,2;NA;NA;NA;NA;NA;NA;NA;"18 years old, who have completed primary school"
+"completed_lower_secondary_share";2024;NA;99,2;NA;NA;NA;NA;NA;NA;NA;"18 years old, who have completed primary school"
+"completed_lower_secondary_share";2015;NA;80,9;NA;NA;NA;NA;NA;NA;NA;"25 years old (total), who have completed secondary education"
+"completed_lower_secondary_share";2016;NA;82,1;NA;NA;NA;NA;NA;NA;NA;"25 years old (total), who have completed secondary education"
+"completed_lower_secondary_share";2017;NA;82,6;NA;NA;NA;NA;NA;NA;NA;"25 years old (total), who have completed secondary education"
+"completed_lower_secondary_share";2018;NA;83;NA;NA;NA;NA;NA;NA;NA;"25 years old (total), who have completed secondary education"
+"completed_lower_secondary_share";2019;NA;83;NA;NA;NA;NA;NA;NA;NA;"25 years old (total), who have completed secondary education"
+"completed_lower_secondary_share";2020;NA;82,9;NA;NA;NA;NA;NA;NA;NA;"25 years old (total), who have completed secondary education"
+"completed_lower_secondary_share";2021;NA;82,8;NA;NA;NA;NA;NA;NA;NA;"25 years old (total), who have completed secondary education"
+"completed_lower_secondary_share";2022;NA;83,7;NA;NA;NA;NA;NA;NA;NA;"25 years old (total), who have completed secondary education"
+"completed_lower_secondary_share";2023;NA;84,8;NA;NA;NA;NA;NA;NA;NA;"25 years old (total), who have completed secondary education"
+"completed_lower_secondary_share";2024;NA;84,7;NA;NA;NA;NA;NA;NA;NA;"25 years old (total), who have completed secondary education"
+"completed_lower_secondary_share";2015;NA;78,3;NA;NA;NA;NA;NA;NA;NA;"25 years old (men), who have completed secondary education"
+"completed_lower_secondary_share";2016;NA;79,1;NA;NA;NA;NA;NA;NA;NA;"25 years old (men), who have completed secondary education"
+"completed_lower_secondary_share";2017;NA;79,8;NA;NA;NA;NA;NA;NA;NA;"25 years old (men), who have completed secondary education"
+"completed_lower_secondary_share";2018;NA;80,1;NA;NA;NA;NA;NA;NA;NA;"25 years old (men), who have completed secondary education"
+"completed_lower_secondary_share";2019;NA;79,9;NA;NA;NA;NA;NA;NA;NA;"25 years old (men), who have completed secondary education"
+"completed_lower_secondary_share";2020;NA;79,6;NA;NA;NA;NA;NA;NA;NA;"25 years old (men), who have completed secondary education"
+"completed_lower_secondary_share";2021;NA;79,5;NA;NA;NA;NA;NA;NA;NA;"25 years old (men), who have completed secondary education"
+"completed_lower_secondary_share";2022;NA;80,5;NA;NA;NA;NA;NA;NA;NA;"25 years old (men), who have completed secondary education"
+"completed_lower_secondary_share";2023;NA;81,8;NA;NA;NA;NA;NA;NA;NA;"25 years old (men), who have completed secondary education"
+"completed_lower_secondary_share";2024;NA;81,6;NA;NA;NA;NA;NA;NA;NA;"25 years old (men), who have completed secondary education"
+"completed_lower_secondary_share";2015;NA;83,6;NA;NA;NA;NA;NA;NA;NA;"25 years old (women), who have completed secondary education"
+"completed_lower_secondary_share";2016;NA;85,1;NA;NA;NA;NA;NA;NA;NA;"25 years old (women), who have completed secondary education"
+"completed_lower_secondary_share";2017;NA;85,6;NA;NA;NA;NA;NA;NA;NA;"25 years old (women), who have completed secondary education"
+"completed_lower_secondary_share";2018;NA;86;NA;NA;NA;NA;NA;NA;NA;"25 years old (women), who have completed secondary education"
+"completed_lower_secondary_share";2019;NA;86,2;NA;NA;NA;NA;NA;NA;NA;"25 years old (women), who have completed secondary education"
+"completed_lower_secondary_share";2020;NA;86,4;NA;NA;NA;NA;NA;NA;NA;"25 years old (women), who have completed secondary education"
+"completed_lower_secondary_share";2021;NA;86,2;NA;NA;NA;NA;NA;NA;NA;"25 years old (women), who have completed secondary education"
+"completed_lower_secondary_share";2022;NA;87;NA;NA;NA;NA;NA;NA;NA;"25 years old (women), who have completed secondary education"
+"completed_lower_secondary_share";2023;NA;87,9;NA;NA;NA;NA;NA;NA;NA;"25 years old (women), who have completed secondary education"
+"completed_lower_secondary_share";2024;NA;87,8;NA;NA;NA;NA;NA;NA;NA;"25 years old (women), who have completed secondary education"
