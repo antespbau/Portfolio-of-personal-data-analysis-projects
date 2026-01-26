@@ -1,4 +1,3 @@
-# Portfolio-of-personal-data-analysis-projects
 # Portfolio of personal data analysis projects
 
 Hi, I’m Antonio Espino Bautista. This repo is a small portfolio of personal data projects I’ve built to practice analytics end-to-end: cleaning data, building simple models, and presenting results in dashboards.
