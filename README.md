@@ -11,7 +11,7 @@ Hi, I’m Antonio Espino Bautista. This repo is a small portfolio of personal da
 - built a composite ESG score (normalisation + weighting)
 - visualised results in a Power BI dashboard
 
-➡️ Folder: `ESG danish scores/`
+➡️ Folder: - [ESG scoring dashboard (R / Power BI)](ESG%20danish%20scores/)
 
 ### 2) Norwegian fleet dashboard (Power BI)
 **Goal:** explore fleet KPIs and present insights in a clear dashboard.
