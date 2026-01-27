@@ -20,7 +20,7 @@ Hi, I’m Antonio Espino Bautista. This repo is a small portfolio of personal da
 - built KPI pages with filters and drill-downs
 - focused on clear visual storytelling
 
-➡️ Folder: `Overview of the norwegian fleets (dashboard)/`
+➡️ Folder: - [Norwegian fleet dashboard (Power BI)](Overview%20of%20the%20norwegian%20fleets%20(dashboard)/)`
 
 ## Tools
 Power BI (DAX, Power Query, data modelling), Excel, SQL, R (plus basic Python).
