@@ -12,6 +12,7 @@ Hi, I’m Antonio Espino Bautista. This repo is a small portfolio of personal da
 - visualised results in a Power BI dashboard
 
 ➡️ Folder: - [ESG scoring dashboard (R / Power BI)](ESG%20danish%20scores/)
+🔗 **Live dashboard (Power BI):** [View report](https://app.powerbi.com/reportEmbed?reportId=dd0159d0-83fa-4255-8b75-bf1703bf680e&autoAuth=true&ctid=ffd8c5b5-7134-420b-90f6-18abe087e8f5)
 
 ### 2) Norwegian fleet dashboard (Power BI)
 **Goal:** explore fleet KPIs and present insights in a clear dashboard.
@@ -20,8 +21,10 @@ Hi, I’m Antonio Espino Bautista. This repo is a small portfolio of personal da
 - built KPI pages with filters and drill-downs
 - focused on clear visual storytelling
 
-➡️ Folder: - [Norwegian fleet dashboard (Power BI)](Overview%20of%20the%20norwegian%20fleets%20(dashboard)/)`
-🔗 **Live dashboard (Power BI):** [View report](https://app.powerbi.com/reportEmbed?reportId=dd0159d0-83fa-4255-8b75-bf1703bf680e&autoAuth=true&ctid=ffd8c5b5-7134-420b-90f6-18abe087e8f5)
+➡️ Folder: - [Norwegian fleet dashboard (Power BI)](Overview%20of%20the%20norwegian%20fleets%20(dashboard)/)
+🔗 **Live dashboard (Power BI):** [View report](https://app.powerbi.com/reportEmbed?reportId=aff4f1cb-a7d3-4532-9f94-02812ad566dc&autoAuth=true&ctid=ffd8c5b5-7134-420b-90f6-18abe087e8f5)
+`
+
 
 ## Tools
 Power BI (DAX, Power Query, data modelling), Excel, SQL, R (plus basic Python).
