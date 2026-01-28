@@ -21,7 +21,6 @@ Note: microdata is not included here due to access/licensing.
 ## Files
 - `Impacto_de_la_inmigracion_en_la_empleabilidad_de_la_UE.pdf`
 - `Thesis_Script.R`
-- `/outputs/` (optional): exported tables (cluster/education effects + robustness tests)
 
 ## How to run (if you have access to the data)
 The script expects country folders inside a local `base_dir` path. You may need to change `base_dir` to your own structure before running.
