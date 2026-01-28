@@ -46,12 +46,3 @@ Power BI (DAX, Power Query, data modelling), Excel, SQL, R (plus basic Python).
 ## Notes
 - Some datasets are not included (source/licensing). Where that happens, I describe the structure and include the steps/code used.
 - If you want a quick walkthrough, feel free to reach out.
-
-
-
-## Tools
-Power BI (DAX, Power Query, data modelling), Excel, SQL, R (plus basic Python).
-
-## Notes
-- Some datasets are not included (source/licensing). Where that happens, I describe the structure and include the steps/code used.
-- If you want a quick walkthrough, feel free to reach out.
