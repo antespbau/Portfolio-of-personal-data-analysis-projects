@@ -23,7 +23,8 @@ Hi, I’m Antonio Espino Bautista. This repo is a small portfolio of personal da
 
 ➡️ Folder: - [Norwegian fleet dashboard (Power BI)](Overview%20of%20the%20norwegian%20fleets%20(dashboard)/)
 🔗 **Live dashboard (Power BI):** [View report](https://app.powerbi.com/reportEmbed?reportId=aff4f1cb-a7d3-4532-9f94-02812ad566dc&autoAuth=true&ctid=ffd8c5b5-7134-420b-90f6-18abe087e8f5)
-`
+`<img width="1370" height="775" alt="Captura de pantalla (60)" src="https://github.com/user-attachments/assets/103fd460-2352-438f-a956-9fc47e289fbf" />
+
 
 
 ## Tools
