@@ -28,6 +28,26 @@ Hi, I’m Antonio Espino Bautista. This repo is a small portfolio of personal da
 `<img width="1370" height="775" alt="Captura de pantalla (60)" src="https://github.com/user-attachments/assets/103fd460-2352-438f-a956-9fc47e289fbf" />
 
 
+### 3) Master’s thesis — Immigration & employability in the EU (R / Econometrics)
+**Goal:** study how immigration relates to native employability across EU countries using microdata.  
+**What I did:**
+- built a skill-cell panel (education × experience × country × year)
+- estimated fixed-effects models with clustered standard errors
+- analysed differences by country clusters and education level
+- ran robustness/diagnostic tests (Hausman, Breusch–Pagan, Wooldridge, Breusch–Godfrey)
+
+➡️ Folder: [Master’s thesis — code + documentation](Master%20thesis%20-%20EU%20immigration%20employability/)
+
+*(Microdata not included due to licensing/access restrictions.)*
+
+## Tools
+Power BI (DAX, Power Query, data modelling), Excel, SQL, R (plus basic Python).
+
+## Notes
+- Some datasets are not included (source/licensing). Where that happens, I describe the structure and include the steps/code used.
+- If you want a quick walkthrough, feel free to reach out.
+
+
 
 ## Tools
 Power BI (DAX, Power Query, data modelling), Excel, SQL, R (plus basic Python).
