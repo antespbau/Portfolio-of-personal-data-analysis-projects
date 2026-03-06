@@ -36,33 +36,6 @@ The project produces visual outputs and summary tables to support energy market 
 
 ---
 
-## Project Structure
-
-Denmark Energy Price Forecasting/
-│
-├── Scripts/
-│   ├── ingest.py
-│   ├── plot.py
-│   ├── plot_spread.py
-│   ├── features.py
-│   ├── test_best_window.py
-│   ├── forecast.py
-│   └── runpipeline.py
-│
-├── PNG/
-│   ├── price_plot.png
-│   ├── spread_plot.png
-│   ├── feature_analysis.png
-│   ├── window_test_results.png
-│   └── forecast_next_week.png
-│
-├── energy.duckdb
-├── window_results.csv
-├── forecast_next_week_hourly.csv
-└── readme.md
-
----
-
 # Pipeline Workflow
 
 The project runs through the following steps:
