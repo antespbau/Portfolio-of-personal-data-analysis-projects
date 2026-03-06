@@ -38,7 +38,6 @@ The project produces visual outputs and summary tables to support energy market 
 
 ## Project Structure
 
-```bash
 Denmark Energy Price Forecasting/
 │
 ├── Scripts/
@@ -61,7 +60,7 @@ Denmark Energy Price Forecasting/
 ├── window_results.csv
 ├── forecast_next_week_hourly.csv
 └── readme.md
-```bash
+
 ---
 
 # Pipeline Workflow
