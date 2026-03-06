@@ -61,7 +61,7 @@ Denmark Energy Price Forecasting/
 ├── window_results.csv
 ├── forecast_next_week_hourly.csv
 └── readme.md
-
+```bash
 ---
 
 # Pipeline Workflow
