@@ -66,6 +66,7 @@ These plots allow quick inspection of:
 • long-term trends  
 • seasonal behaviour  
 • volatility patterns
+![Price plot](![Uploading dk1_dk2_price_evolution.png…]())
 
 ---
 
