@@ -2,6 +2,8 @@
 
 Hi, I’m Antonio Espino Bautista. This repo is a small portfolio of personal data projects I’ve built to practice analytics end-to-end: cleaning data, building simple models, and presenting results in dashboards.
 
+## Projects
+
 ### 1) Denmark electricity price forecasting (Python)
 
 **Goal:** analyse and forecast day-ahead electricity prices in Denmark (DK1 and DK2 bidding zones).
@@ -16,9 +18,8 @@ Hi, I’m Antonio Espino Bautista. This repo is a small portfolio of personal da
 **Next week hourly forecast** — projected electricity prices for the coming week  
 <img width="1292" height="729" alt="forecast_next_week_hourly" src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/forecast_next_week_hourly.png" />
 
-## Projects
 
-### 1) ESG scoring dashboard (R / Power BI)
+### 2) ESG scoring dashboard (R / Power BI)
 **Goal:** create a simple ESG scoring approach and compare entities.
 **What I did:**
 - cleaned and prepared the dataset
@@ -30,7 +31,7 @@ Hi, I’m Antonio Espino Bautista. This repo is a small portfolio of personal da
 <img width="1292" height="729" alt="Captura de pantalla (63)" src="https://github.com/user-attachments/assets/e893bf9a-f057-4c3e-a0f6-26accbd53a33" />
 
 
-### 2) Norwegian fleet dashboard (Power BI)
+### 3) Norwegian fleet dashboard (Power BI)
 **Goal:** explore fleet KPIs and present insights in a clear dashboard.
 **What I did:**
 - prepared the data and created the model in Power BI (relationships, measures)
@@ -42,7 +43,7 @@ Hi, I’m Antonio Espino Bautista. This repo is a small portfolio of personal da
 `<img width="1370" height="775" alt="Captura de pantalla (60)" src="https://github.com/user-attachments/assets/103fd460-2352-438f-a956-9fc47e289fbf" />
 
 
-### 3) Master’s thesis — Immigration & employability in the EU (R / Econometrics)
+### 4) Master’s thesis — Immigration & employability in the EU (R / Econometrics)
 **Goal:** study how immigration relates to native employability across EU countries using microdata.  
 **What I did:**
 - built a skill-cell panel (education × experience × country × year)
