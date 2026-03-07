@@ -66,9 +66,9 @@ These plots allow quick inspection of:
 • long-term trends  
 • seasonal behaviour  
 • volatility patterns
-**Next week hourly forecast** — projected electricity prices for the next week  
-<img width="1292" height="729" alt="Next week hourly forecast" src="outputs/figures/forecast_next_week_hourly.png" />
+**DK1 vs DK2 electricity prices** — historical price evolution in the Danish electricity market  
 
+<img width="1292" height="729" alt="dk1_dk2_price_evolution" src="https://github.com/antespbau/Portfolio-of-personal-data-analysis-projects/blob/main/Denmark%20Energy%20Price%20Forecasting/PNG/dk1_dk2_price_evolution.png" />
 ---
 
 ### 3. Spread analysis
