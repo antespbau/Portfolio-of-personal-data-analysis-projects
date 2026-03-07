@@ -2,6 +2,20 @@
 
 Hi, I’m Antonio Espino Bautista. This repo is a small portfolio of personal data projects I’ve built to practice analytics end-to-end: cleaning data, building simple models, and presenting results in dashboards.
 
+### 1) Denmark electricity price forecasting (Python)
+
+**Goal:** analyse and forecast day-ahead electricity prices in Denmark (DK1 and DK2 bidding zones).
+
+**What I did:**
+- extracted and cleaned electricity price data
+- explored price behaviour across Danish bidding zones
+- built a simple forecasting workflow for next-week hourly prices
+- generated visual outputs and forecast summary tables
+
+➡️ Folder: [Denmark electricity price forecasting](Denmark%20Energy%20Price%20Forecasting/)
+**Next week hourly forecast** — projected electricity prices for the coming week  
+<img width="1292" height="729" alt="forecast_next_week_hourly" src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/forecast_next_week_hourly.png" />
+
 ## Projects
 
 ### 1) ESG scoring dashboard (R / Power BI)
