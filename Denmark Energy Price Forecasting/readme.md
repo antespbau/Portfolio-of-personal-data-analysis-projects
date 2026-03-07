@@ -78,7 +78,9 @@ These plots allow quick inspection of:
 Calculates and visualises the price spread between DK2 and DK1.
 
 This helps highlight structural differences between the two Danish price zones.
+**DK1–DK2 price spread** — difference between West and East Denmark electricity prices  
 
+<img width="1292" height="729" alt="dk_spread_evolution" src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/dk_spread_evolution.png" />
 ---
 
 ### 4. Feature engineering
