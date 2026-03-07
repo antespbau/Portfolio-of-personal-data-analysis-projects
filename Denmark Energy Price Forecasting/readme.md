@@ -66,7 +66,8 @@ These plots allow quick inspection of:
 • long-term trends  
 • seasonal behaviour  
 • volatility patterns
-![Price plot](![Uploading dk1_dk2_price_evolution.png…]())
+**Next week hourly forecast** — projected electricity prices for the next week  
+<img width="1292" height="729" alt="Next week hourly forecast" src="outputs/figures/forecast_next_week_hourly.png" />
 
 ---
 
