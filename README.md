@@ -56,7 +56,7 @@ Hi, I’m Antonio Espino Bautista. This repo is a small portfolio of personal da
 *(Microdata not included due to licensing/access restrictions.)*
 
 ## Tools
-Power BI (DAX, Power Query, data modelling), Excel, SQL, R (plus basic Python).
+Power BI (DAX, Power Query, data modelling), Excel, SQL, R, Python.
 
 ## Notes
 - Some datasets are not included (source/licensing). Where that happens, I describe the structure and include the steps/code used.
