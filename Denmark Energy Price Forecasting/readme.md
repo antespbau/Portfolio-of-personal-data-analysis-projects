@@ -135,27 +135,13 @@ Outputs include:
 • forecast CSV file  
 • forecast visualisation  
 • forecast summary table
+**Next week hourly forecast** — projected electricity prices for the coming week  
 
----
+<img width="1292" height="729" alt="forecast_next_week_hourly" src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/forecast_next_week_hourly.png" />
 
-# Example Outputs
+**Forecast summary table** — next week electricity price forecast by hour  
 
-### Electricity price evolution
-
-![Price plot](PNG/price_plot.png)
-
----
-
-### Price spread DK2 – DK1
-
-![Spread plot](PNG/spread_plot.png)
-
----
-
-### Forecast for next week
-
-![Forecast](PNG/forecast_next_week.png)
-
+<img width="1292" height="729" alt="table_forecast_summary" src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/table_forecast_summary.png" />
 ---
 
 # How to Run the Project
