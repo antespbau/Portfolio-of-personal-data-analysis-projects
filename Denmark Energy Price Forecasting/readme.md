@@ -119,7 +119,9 @@ Models are evaluated using:
 • RMSE (Root Mean Squared Error)
 
 The best performing window is selected for the final model.
+**Rolling window forecast results** — model performance across evaluation windows  
 
+<img width="1292" height="729" alt="window_results_plot" src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/window_results_plot.png" />
 ---
 
 ### 6. Forecast generation
