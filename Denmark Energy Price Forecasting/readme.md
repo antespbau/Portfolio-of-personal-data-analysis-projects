@@ -135,6 +135,7 @@ Outputs include:
 • forecast CSV file  
 • forecast visualisation  
 • forecast summary table
+
 **Next week hourly forecast** — projected electricity prices for the coming week  
 
 <img width="1292" height="729" alt="forecast_next_week_hourly" src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/forecast_next_week_hourly.png" />
