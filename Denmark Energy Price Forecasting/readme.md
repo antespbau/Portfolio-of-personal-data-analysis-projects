@@ -44,7 +44,7 @@ Models are evaluated using:
 
 This was the original model developed in the project.
 
-The baseline model uses only historical electricity prices and time-based patterns to generate forecasts. In economic terms, this means that the model treats the electricity price itself as the main source of information, assuming that part of current price formation can be explained by persistence, recent volatility and recurring calendar effects such as hourly demand cycles, weekdays and seasonality. This is a useful starting point because electricity prices often display short-term autocorrelation and repeated behavioural patterns, even before introducing external market fundamentals. At the same time, the limitation of this approach is that it does not explicitly capture the underlying economic forces behind price formation, such as renewable output, fuel costs or weather-driven demand.
+The baseline model uses only historical prices and time-based features, treating price itself as the main source of information. Economically, this reflects the idea that electricity prices contain persistence, recurring hourly effects and short-term volatility patterns. It is a useful benchmark because it captures market memory, although it does not explicitly model the underlying drivers of price formation.
 
 ---
 
@@ -75,7 +75,7 @@ These plots allow quick inspection of: **long-term trends, seasonal behaviour an
 
 <img width="1292" height="729" src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/dk1_dk2_price_evolution.png"/>
 
-The historical series shows that Danish electricity prices do not follow a simple or stable pattern over time. Instead, prices display high volatility, frequent spikes and changing regimes, which is typical of electricity markets where supply-demand balance must be maintained in real time. Over the last 36 months, both DK1 and DK2 have moved broadly in the same direction, reflecting their integration within the Nordic and European power system, but differences between the two zones remain visible. These differences suggest that local market conditions, transmission constraints and regional supply dynamics still matter. The chart also shows that periods of relative stability can quickly be replaced by sharp fluctuations, which makes forecasting especially challenging and reinforces the importance of combining statistical techniques with economic interpretation.
+The historical series shows no stable or simple pattern, but rather high volatility, sharp spikes and changing regimes over time. Over the last 36 months, DK1 and DK2 broadly follow similar trends, which reflects their integration in the wider power system. Still, visible differences between both zones suggest that regional conditions and transmission constraints continue to influence price formation.
 
 ---
 
@@ -103,7 +103,7 @@ Tests multiple historical training windows to determine the optimal amount of hi
 
 <img width="1292" height="729" src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/window_results_plot.png"/>
 
-Choosing the training window is an important modelling decision in electricity price forecasting. Using too little history can make the model unstable and too sensitive to short-term noise, while using too much history can reduce performance because market conditions change over time and older observations may no longer be representative of the current system. The results show that a **12-month window** provides the best balance for this baseline model. Economically, this suggests that the most relevant information comes from the most recent full annual cycle, which captures both seasonal effects and relatively current market behaviour without overloading the model with outdated regimes.
+Selecting the training window is important because too little history can make the model unstable, while too much can introduce outdated market conditions. The results indicate that a **12-month window** performs best for this model. This suggests that the most recent full annual cycle captures enough seasonal structure while remaining close to current market dynamics.
 
 ---
 
@@ -152,7 +152,7 @@ Because Denmark has one of the highest wind penetrations in Europe, wind generat
 
 This model produced the **best forecasting performance**.
 
-The results show a clear improvement over the baseline model in both Danish bidding zones. Adding wind generation, temperature and gas prices reduces forecast errors substantially, which indicates that electricity prices cannot be fully understood from past prices alone. From an economic perspective, this is an important result: the model performs better when it includes variables linked to supply conditions, weather-sensitive demand and marginal production costs. The stronger performance of the Market Drivers model suggests that these fundamentals capture a meaningful part of price formation in Denmark and provide a better balance between predictive accuracy and interpretability.
+The addition of wind generation, temperature and gas prices clearly improves the forecasts in both DK1 and DK2. This shows that electricity prices are better explained when the model includes real supply, demand and cost signals rather than relying only on past prices. Economically, it confirms that short-term power prices respond strongly to current market fundamentals.
 
 ---
 
@@ -163,7 +163,7 @@ The results show a clear improvement over the baseline model in both Danish bidd
   <img src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/PNG/price_correlation_DK2.png" width="450"/>
 </p>
 
-The coefficient patterns are economically intuitive. Lagged price variables remain highly relevant, confirming that short-term persistence continues to matter in electricity markets. At the same time, the added market drivers help explain part of the variation that pure autoregressive features miss. Wind generation is expected to show a negative relationship with prices, since higher renewable output increases supply and tends to push prices down. Temperature helps proxy demand conditions, while gas prices reflect the cost pressure coming from thermal generation. The fact that these variables contribute alongside lagged prices reinforces the idea that Danish electricity prices are shaped by both market memory and contemporaneous fundamentals.
+Lagged prices remain highly relevant, confirming the importance of short-term persistence in electricity markets. The market drivers add extra explanatory power by capturing part of the variation missed by the baseline model. In economic terms, wind generation, temperature and gas prices help connect the forecast to the physical and cost structure of the market.
 
 ---
 
@@ -186,7 +186,7 @@ Added variables:
 - Cross-border electricity **flows**
 - Neighbouring markets: **Germany, Sweden, Norway and Netherlands**  
 
-These variables attempt to represent **physical grid conditions and international electricity trading dynamics**. Electricity prices are not determined only by domestic supply and demand, but also by the broader interconnected power system. Load captures the direct pressure of consumption on the market, while cross-border flows reflect the role of imports, exports and transmission availability. Including neighbouring markets aims to account for the fact that Danish price zones are influenced by surrounding systems through interconnection and regional price coupling. In theory, these variables should improve the economic realism of the model by incorporating more of the structural mechanisms behind price formation.
+These variables attempt to represent **physical grid conditions and international electricity trading dynamics**. They are economically relevant because Danish prices are shaped not only by domestic conditions, but also by regional interconnection and power exchange with neighbouring markets. In theory, this should make the model more realistic by reflecting broader structural influences on price formation.
 
 ---
 
@@ -200,7 +200,7 @@ These variables attempt to represent **physical grid conditions and internationa
 
 Although the model remained strong, these variables introduced additional noise and slightly worsened performance.
 
-The results suggest that adding more structural variables did not translate into better forecasts. Although the extended model still outperforms the baseline model, it performs slightly worse than the Market Drivers model in both DK1 and DK2. This indicates that more information does not automatically mean more predictive power. Some of the added variables may contain overlapping signals, measurement noise or effects that are harder to capture in a simple forecasting framework. Economically, this is also a useful finding: the most relevant drivers of short-term Danish electricity prices may already be captured by a relatively compact set of fundamentals, while further structural complexity can reduce model efficiency rather than improve it.
+The extended model still performs better than the baseline, but slightly worse than the Market Drivers model in both bidding zones. This suggests that adding more variables does not automatically improve forecasting accuracy. In this case, the extra structural information seems to introduce more noise or overlapping signals than useful predictive power.
 
 ---
 
@@ -211,7 +211,7 @@ The results suggest that adding more structural variables did not translate into
   <img src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/PNG/price_correlation_improve_market_drivers_DK2.png" width="450"/>
 </p>
 
-The coefficient structure of the extended model shows that, while some additional variables contribute useful information, their overall effect is less clear and less stable than in the Market Drivers model. Variables related to load, flows and neighbouring markets are economically relevant, but they may interact in complex ways and can be strongly correlated with one another. This makes interpretation more difficult and may weaken the model’s ability to generalise. In practice, the results suggest that introducing broader structural factors increases conceptual richness, but also raises the risk of multicollinearity, redundant information and lower forecasting precision.
+The added structural variables are economically meaningful, but their effect appears less clear and stable than the core market drivers. Load, flows and neighbouring market conditions may interact strongly with one another, making interpretation more difficult. This suggests that greater structural richness can also increase redundancy and reduce model robustness.
 
 ---
 
@@ -231,27 +231,15 @@ The coefficient structure of the extended model shows that, while some additiona
   <img src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/PNG/forecast_comparison_models_DK2.png" width="900"/>
 </p>
 
-The forecast comparison across models highlights the trade-off between simplicity, economic realism and predictive accuracy. The baseline model captures general temporal dynamics but is less responsive to underlying market conditions. The Market Drivers model produces the best overall forecasts, suggesting that a focused set of economically meaningful variables is enough to improve performance significantly. The extended structural model remains informative, but the additional complexity does not produce further gains. This comparison shows that, in applied electricity price forecasting, the best model is not necessarily the most complex one, but the one that combines relevant economic signals with a parsimonious and robust structure.
+The comparison shows a clear trade-off between simplicity, economic realism and predictive performance. The baseline model captures temporal structure, but the Market Drivers model delivers the best overall forecasts by adding a focused set of meaningful fundamentals. The extended structural model adds complexity, but not enough extra value to outperform the more parsimonious specification.
 
 ---
 
 # Final Summary
 
-This project provides an applied economic and data-driven analysis of Danish day-ahead electricity prices in DK1 and DK2. Across the three modelling stages, the results show that electricity prices can be partially forecast using their own past behaviour, but that predictive performance improves significantly when the model incorporates market fundamentals linked to supply, demand and production costs. In particular, wind generation, temperature and gas prices add strong explanatory value because they reflect key mechanisms of price formation in power markets.
+This project analyses Danish day-ahead electricity prices through three modelling stages, moving from a pure time-series baseline to models that incorporate market fundamentals and broader structural variables. The results show that price history alone contains useful information, but forecast accuracy improves significantly when the model includes economically meaningful drivers such as wind generation, temperature and gas prices.
 
-The main conclusion is that the **Market Drivers model** offers the best balance between forecasting accuracy and economic interpretability. It improves performance over the pure time-series baseline while remaining more robust than the broader structural specification. This suggests that, for short-term Danish electricity price forecasting, a focused set of economically meaningful variables can outperform a more complex model with a wider set of structural inputs.
-
-Beyond forecasting, the project also illustrates a broader analytical point: electricity markets are influenced by recurring temporal patterns, but also by real physical and economic fundamentals. Combining both perspectives leads to stronger and more realistic models, which is especially relevant for energy market analysis, trading, system planning and business decision-making.
-
-This project demonstrates how electricity price forecasting models can be progressively improved by incorporating additional market information.
-
-The modelling process evolved through three stages:
-
-1. **Baseline autoregressive model**  
-2. **Market Drivers model**  
-3. **Extended structural model**
-
-The results show that the **Market Drivers model achieved the best balance between predictive accuracy and economic interpretability**.
+Overall, the **Market Drivers model** achieved the best balance between predictive performance and economic interpretability. The project therefore highlights an important conclusion for applied energy analytics: the most useful forecasting model is not necessarily the most complex one, but the one that combines relevant market signals with a robust and focused structure.
 
 ---
 
