@@ -217,14 +217,13 @@ To better understand the model behaviour, feature importance and coefficient ana
 
 This allows the model to be interpreted not only as a forecasting tool but also as a **market analysis framework**.
 
-### Market Drivers — DK1
-![Market Drivers DK1 coefficients](https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/price_correlation_DK1.png)
+### DK1 coefficients
 
-### Market Drivers — DK2
-![Market Drivers DK2 coefficients](https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/price_correlation_DK2.png)
+<img width="1292" height="729" alt="price_correlation_DK1" src="https://github.com/antespbau/Portfolio-of-personal-data-analysis-projects/blob/main/Denmark%20Energy%20Price%20Forecasting/PNG/price_correlation_DK1.png" />
 
-### Improve Market Drivers — Feature Importance
-![Improve Market Drivers feature importance](https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/feature_importance_improve_market_drivers.png)
+### DK2 coefficients
+
+<img width="1292" height="729" alt="price_correlation_DK2" src="https://github.com/antespbau/Portfolio-of-personal-data-analysis-projects/blob/main/Denmark%20Energy%20Price%20Forecasting/PNG/price_correlation_DK2.png" />
 
 These results help identify which variables contribute most to electricity price formation in each Danish bidding zone.
 
@@ -240,18 +239,13 @@ This comparison helps verify whether the model captures:
 - volatility spikes
 - short-term trends
 
-### Market Drivers — DK1
-![Actual vs Predicted DK1](https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/actual_vs_predicted_market_drivers_DK1.png)
+### DK1 — Actual vs Predicted
 
-### Market Drivers — DK2
-![Actual vs Predicted DK2](https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/actual_vs_predicted_market_drivers_DK2.png)
----
+<img width="1292" height="729" alt="actual_vs_predicted_market_drivers_DK1" src="https://github.com/antespbau/Portfolio-of-personal-data-analysis-projects/blob/main/Denmark%20Energy%20Price%20Forecasting/PNG/actual_vs_predicted_market_drivers_DK1.png" />
 
-## Market Drivers Forecast
+### DK2 — Actual vs Predicted
 
-The trained Market Drivers model was used to generate **hourly electricity price forecasts for the next week**.
-
-This stage shows how the pipeline can be used in a practical forecasting setting using both time-series structure and market fundamentals.
+<img width="1292" height="729" alt="actual_vs_predicted_market_drivers_DK2" src="https://github.com/antespbau/Portfolio-of-personal-data-analysis-projects/blob/main/Denmark%20Energy%20Price%20Forecasting/PNG/actual_vs_predicted_market_drivers_DK2.png" />
 
 ---
 
@@ -306,22 +300,27 @@ This suggests that, in this case, more variables did not necessarily provide mor
 
 As with the previous model, feature importance analysis was performed to understand how the additional variables influenced predictions.
 
-### DK1
-![Improve correlation DK1](https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/price_correlation_improve_market_drivers_DK1.png)
+### DK1 coefficients
 
-### DK2
-![Improve correlation DK2](https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/price_correlation_improve_market_drivers_DK2.png)
+<img width="1292" height="729" alt="price_correlation_improve_market_drivers_DK1" src="https://github.com/antespbau/Portfolio-of-personal-data-analysis-projects/blob/main/Denmark%20Energy%20Price%20Forecasting/PNG/price_correlation_improve_market_drivers_DK1.png" />
+
+### DK2 coefficients
+
+<img width="1292" height="729" alt="price_correlation_improve_market_drivers_DK2" src="https://github.com/antespbau/Portfolio-of-personal-data-analysis-projects/blob/main/Denmark%20Energy%20Price%20Forecasting/PNG/price_correlation_improve_market_drivers_DK2.png" />
+
 ---
 
 ## Improve Model Actual vs Predicted
 
-### Improve Market Drivers — DK1
-![Improve Model DK1](https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/reduced_model_actual_vs_predicted_DK1.png)
+### DK1 — Actual vs Predicted
 
-### Improve Market Drivers — DK2
-![Improve Model DK2](https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/reduced_model_actual_vs_predicted_DK2.png)
+<img width="1292" height="729" alt="reduced_model_actual_vs_predicted_DK1" src="https://github.com/antespbau/Portfolio-of-personal-data-analysis-projects/blob/main/Denmark%20Energy%20Price%20Forecasting/PNG/reduced_model_actual_vs_predicted_DK1.png" />
+
+### DK2 — Actual vs Predicted
+
+<img width="1292" height="729" alt="reduced_model_actual_vs_predicted_DK2" src="https://github.com/antespbau/Portfolio-of-personal-data-analysis-projects/blob/main/Denmark%20Energy%20Price%20Forecasting/PNG/reduced_model_actual_vs_predicted_DK2.png" />
+
 ---
-
 # Forecast Comparison Across Models
 
 The forecasts produced by the three modelling approaches were compared visually:
@@ -334,11 +333,11 @@ This comparison illustrates how increasing model complexity affects forecast beh
 
 ### DK1 Forecast Comparison
 
-![Forecast comparison DK1](PATH_TO_IMAGE)
+<img width="1292" height="729" alt="forecast_comparison_models_DK1" src="https://github.com/antespbau/Portfolio-of-personal-data-analysis-projects/blob/main/Denmark%20Energy%20Price%20Forecasting/PNG/forecast_comparison_models_DK1.png" />
 
 ### DK2 Forecast Comparison
 
-![Forecast comparison DK2](PATH_TO_IMAGE)
+<img width="1292" height="729" alt="forecast_comparison_models_DK2" src="https://github.com/antespbau/Portfolio-of-personal-data-analysis-projects/blob/main/Denmark%20Energy%20Price%20Forecasting/PNG/forecast_comparison_models_DK2.png" />
 
 ---
 
