@@ -189,6 +189,16 @@ Added variables:
 These variables attempt to represent **physical grid conditions and international electricity trading dynamics**. They are economically relevant because Danish prices are shaped not only by domestic conditions, but also by regional interconnection and power exchange with neighbouring markets. In theory, this should make the model more realistic by reflecting broader structural influences on price formation.
 
 ---
+# Coefficients
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/PNG/price_correlation_improve_market_drivers_DK1.png" width="450"/>
+  <img src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/PNG/price_correlation_improve_market_drivers_DK2.png" width="450"/>
+</p>
+
+The added structural variables are economically meaningful, but their effect appears less clear and stable than the core market drivers. Load, flows and neighbouring market conditions may interact strongly with one another, making interpretation more difficult. This suggests that greater structural richness can also increase redundancy and reduce model robustness.
+
+---
 
 # Improved Model Results
 
@@ -201,17 +211,6 @@ These variables attempt to represent **physical grid conditions and internationa
 Although the model remained strong, these variables introduced additional noise and slightly worsened performance.
 
 The extended model still performs better than the baseline, but slightly worse than the Market Drivers model in both bidding zones. This suggests that adding more variables does not automatically improve forecasting accuracy. In this case, the extra structural information seems to introduce more noise or overlapping signals than useful predictive power.
-
----
-
-# Coefficients
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/PNG/price_correlation_improve_market_drivers_DK1.png" width="450"/>
-  <img src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/PNG/price_correlation_improve_market_drivers_DK2.png" width="450"/>
-</p>
-
-The added structural variables are economically meaningful, but their effect appears less clear and stable than the core market drivers. Load, flows and neighbouring market conditions may interact strongly with one another, making interpretation more difficult. This suggests that greater structural richness can also increase redundancy and reduce model robustness.
 
 ---
 
