@@ -224,7 +224,7 @@ The added structural variables are economically meaningful, but their effect app
 
 ---
 
-# Forecast Comparison Across Models
+# 4. Forecast Comparison Across Models
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/PNG/forecast_comparison_models_DK1.png" width="900"/>
@@ -235,7 +235,7 @@ The comparison shows a clear trade-off between simplicity, economic realism and 
 
 ---
 
-# Final Summary
+# 5. Final Summary
 
 This project analyses Danish day-ahead electricity prices through three modelling stages, moving from a pure time-series baseline to models that incorporate market fundamentals and broader structural variables. The results show that price history alone contains useful information, but forecast accuracy improves significantly when the model includes economically meaningful drivers such as wind generation, temperature and gas prices.
 
