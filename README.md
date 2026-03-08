@@ -24,8 +24,8 @@ Hi, I’m Antonio Espino Bautista. This repo is a small portfolio of personal da
 **Next week forecast comparison** — baseline vs market drivers vs extended model  
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/PNG/forecast_comparison_models_DK1.png" width="650"/>
-  <img src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/PNG/forecast_comparison_models_DK2.png" width="650"/>
+  <img src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/PNG/forecast_comparison_models_DK1.png" width="800"/>
+  <img src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/PNG/forecast_comparison_models_DK2.png" width="800"/>
 </p>
 
 ### 2) ESG scoring dashboard (R / Power BI)
