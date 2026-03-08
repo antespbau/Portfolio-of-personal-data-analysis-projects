@@ -77,7 +77,7 @@ These plots allow quick inspection of:
 
 **DK1 vs DK2 electricity prices — historical price evolution**
 
-<img width="400" height="100" src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/dk1_dk2_price_evolution.png"/>
+<img width="100" height="50" src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/dk1_dk2_price_evolution.png"/>
 
 ---
 
