@@ -219,13 +219,12 @@ This model produced the **best forecasting performance**.
 
 # Actual vs Predicted Prices
 
-### DK1
+### Actual vs Predicted Prices
 
-<img width="1292" height="729" src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/PNG/actual_vs_predicted_market_drivers_DK1.png"/>
-
-### DK2
-
-<img width="1292" height="729" src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/PNG/actual_vs_predicted_market_drivers_DK2.png"/>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/PNG/actual_vs_predicted_market_drivers_DK1.png" width="450"/>
+  <img src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/PNG/actual_vs_predicted_market_drivers_DK2.png" width="450"/>
+</p>
 
 ---
 
