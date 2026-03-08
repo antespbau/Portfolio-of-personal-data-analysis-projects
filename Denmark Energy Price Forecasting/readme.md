@@ -2,8 +2,7 @@
 
 This project builds an end-to-end data pipeline to analyse and forecast Danish electricity prices in the two bidding zones:
 
-- **DK1 — West Denmark**
-- **DK2 — East Denmark**
+- **DK1 — West Denmark**           - **DK2 — East Denmark**
 
 The workflow covers **data ingestion, exploratory analysis, feature engineering, model evaluation and next-week price forecasting** for the day-ahead electricity market.
 
@@ -40,14 +39,7 @@ Models are evaluated using:
 
 # Technologies Used
 
-- Python  
-- pandas  
-- numpy  
-- matplotlib  
-- scikit-learn  
-- xgboost  
-- duckdb  
-- requests  
+ Python, pandas, numpy, matplotlib, scikit-learn, xgboost, duckdb, requests  
 
 ---
 
