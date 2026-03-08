@@ -13,7 +13,7 @@ The objective is to demonstrate practical data analytics and forecasting techniq
 
 ---
 
-# Project Overview
+## Project Overview
 
 Electricity prices in Denmark vary depending on:
 
@@ -29,16 +29,16 @@ This project evolves through **three modelling stages**:
 |------|-------------|
 | **1. Baseline forecasting model** | Pure time-series model using lagged prices, calendar effects and rolling statistics |
 | **2. Market Drivers model** | Extends the baseline model with key market fundamentals such as wind generation, temperature and gas prices |
-| **3. Extended structural model** | Tests additional variables such as load and cross-border flows |
+| **3. Extended structural model** | Tests additional variables such as load and cross-border flows, which ultimately added noise and worsened the forecast metrics |
 
-Models are evaluated using:
+The models are evaluated using:
 
 - **MAE (Mean Absolute Error)**
 - **RMSE (Root Mean Squared Error)**
 
 ---
 
-# Technologies Used
+## Technologies Used
 
 - Python
 - pandas
@@ -59,145 +59,244 @@ It focuses on **price dynamics only**, without adding exogenous market variables
 
 ## Pipeline Workflow
 
-### Data ingestion
+The baseline model runs through the following steps:
 
-Electricity price data is downloaded from the Danish Energy Data Service API and stored locally using DuckDB.
+### 1.1 Data ingestion
 
-### Feature Engineering
+`ingest.py`
 
-The baseline model uses time-series derived variables:
+Downloads electricity price data from the Danish Energy Data Service API.
+
+The script automatically combines:
+
+- historical prices from the **Elspotprices** dataset
+- recent prices from the **DayAheadPrices** dataset
+
+The data is stored locally in a **DuckDB** database.
+
+---
+
+### 1.2 Exploratory visualisation
+
+`plot.py`
+
+Creates historical electricity price charts for DK1 and DK2.
+
+These plots allow quick inspection of:
+
+- long-term trends
+- seasonal behaviour
+- volatility patterns
+
+**DK1 vs DK2 electricity prices** — historical price evolution in the Danish electricity market  
+
+<img width="1292" height="729" alt="dk1_dk2_price_evolution" src="https://github.com/antespbau/Portfolio-of-personal-data-analysis-projects/blob/main/Denmark%20Energy%20Price%20Forecasting/PNG/dk1_dk2_price_evolution.png" />
+
+---
+
+### 1.3 Spread analysis
+
+`plot_spread.py`
+
+Calculates and visualises the price spread between DK2 and DK1.
+
+This highlights structural differences between the two Danish price zones.
+
+**DK1–DK2 price spread** — difference between West and East Denmark electricity prices  
+
+<img width="1292" height="729" alt="dk_spread_evolution" src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/dk_spread_evolution.png" />
+
+---
+
+### 1.4 Feature engineering
+
+`features.py`
+
+Creates time-series features used for forecasting, including:
 
 **Calendar features**
-
-- hour of day  
-- day of week  
-- month  
-- weekend indicator  
+- hour of day
+- day of week
+- month
+- weekend indicator
 
 **Lag features**
-
-- price lag 1 hour  
-- price lag 24 hours  
-- price lag 168 hours  
+- previous hour price
+- previous day price
+- previous week price
 
 **Rolling statistics**
+- 24-hour rolling mean and standard deviation
+- 168-hour rolling mean and standard deviation
 
-- 24 hour rolling mean  
-- 24 hour rolling standard deviation  
-- 168 hour rolling mean  
-- 168 hour rolling standard deviation  
+These features form the basis of the baseline model.
 
-### Training Window Optimisation
+---
 
-Different historical windows were tested to determine the most appropriate amount of historical data for the model.
+### 1.5 Training window optimisation
 
-The best window was selected using MAE and RMSE metrics.
+`test_best_window.py`
+
+Tests multiple historical training windows and evaluates forecasting performance.
+
+This step was used to identify the most appropriate amount of historical information for the baseline model.
+
+Models were compared using:
+
+- MAE
+- RMSE
+
+**Rolling window forecast results** — model performance across evaluation windows  
+
+<img width="1292" height="729" alt="window_results_plot" src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/window_results_plot.png" />
+
+---
+
+### 1.6 Forecast generation
+
+`forecast.py`
+
+Trains the final baseline model and generates hourly electricity price forecasts for the next week.
+
+Outputs include:
+
+- forecast CSV file
+- forecast visualisation
+- forecast summary table
+
+**Next week hourly forecast** — projected electricity prices for the coming week  
+
+<img width="1292" height="729" alt="forecast_next_week_hourly" src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/forecast_next_week_hourly.png" />
+
+**Forecast summary table** — next week electricity price forecast by hour  
+
+<img width="1292" height="729" alt="table_forecast_summary" src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/table_forecast_summary.png" />
 
 ---
 
 # 2. Market Drivers Model
 
-After building the baseline model, the project was extended by incorporating **market fundamentals** that influence electricity prices.
+After building the baseline model, the project was extended by incorporating **market fundamentals** to give the forecasting model more economic significance.
 
-The goal of this stage was to move from a purely autoregressive model to one that reflects **economic drivers of electricity price formation**.
+The idea was to move from a purely autoregressive approach to a model that also reflects key drivers of electricity price formation.
 
-## Added Market Variables
+## Added variables
 
-The following variables were introduced:
+The new model incorporates:
 
-- **Wind generation**
-- **Temperature**
-- **Gas price**
+- `wind_generation`
+- `temperature_2m`
+- `gas_price`
 
-These variables represent three key forces in electricity markets.
+These variables were chosen because they represent:
 
-| Variable | Interpretation |
-|--------|---------------|
-| Wind generation | Renewable electricity supply |
-| Temperature | Weather-driven electricity demand |
-| Gas price | Marginal generation cost in European power markets |
+- renewable supply conditions
+- weather-related demand effects
+- marginal fuel cost pressure
 
-Because Denmark has one of the highest wind penetrations in Europe, wind generation plays a crucial role in price volatility.
+## Why this extension matters
 
-Gas prices influence electricity prices through marginal generation costs in interconnected European markets.
+Electricity prices are not driven only by their own past values. They are also influenced by the underlying structure of the market, especially in a system like Denmark with high renewable penetration.
 
----
+Adding these variables made the model more economically meaningful and improved predictive accuracy.
 
-# Model Performance
-
-Adding these variables significantly improved the model accuracy.
+## Market Drivers results
 
 | Model | DK1 MAE | DK1 RMSE | DK2 MAE | DK2 RMSE |
 |------|--------:|---------:|--------:|---------:|
 | Baseline Model | 10.24 | 18.14 | 11.49 | 21.19 |
 | **Market Drivers Model** | **7.55** | **13.36** | **8.68** | **15.79** |
 
-This model produced the **best forecasting performance**.
+This model produced the **best overall performance**.
 
 ---
 
-# Feature Importance / Coefficients
+## Feature importance / coefficients
 
-To better understand the model behaviour, feature importance analysis was performed.
+To better understand the model behaviour, feature importance and coefficient analysis were performed.
 
-## DK1 coefficients
+This allows the model to be interpreted not only as a forecasting tool but also as a **market analysis framework**.
+
+### DK1 coefficients
 
 ![DK1 coefficients](PATH_TO_IMAGE)
 
-## DK2 coefficients
+### DK2 coefficients
 
 ![DK2 coefficients](PATH_TO_IMAGE)
 
-These results help identify which variables contribute most to electricity price formation in each bidding zone.
+These results help identify which variables contribute most to electricity price formation in each Danish bidding zone.
 
 ---
 
-# Actual vs Predicted Prices
+## Actual vs Predicted Prices
 
 The model predictions were compared with real electricity prices for the most recent week.
 
-This comparison verifies whether the model captures:
+This comparison helps verify whether the model captures:
 
 - daily price cycles
 - volatility spikes
 - short-term trends
 
-## DK1 — Actual vs Predicted
+### DK1 — Actual vs Predicted
 
 ![Actual vs predicted DK1](PATH_TO_IMAGE)
 
-## DK2 — Actual vs Predicted
+### DK2 — Actual vs Predicted
 
 ![Actual vs predicted DK2](PATH_TO_IMAGE)
 
 ---
 
-# 3. Extended Structural Model (Improve Market Drivers)
+## Market Drivers Forecast
 
-In the final stage of the project, additional structural variables were introduced to test whether forecasting accuracy could be improved further.
+The trained Market Drivers model was used to generate **hourly electricity price forecasts for the next week**.
 
-The additional variables included:
+This stage shows how the pipeline can be used in a practical forecasting setting using both time-series structure and market fundamentals.
 
-- **Electricity load**
-- **Cross-border electricity flows**
-    - Germany
-    - Sweden
-    - Norway
-    - Netherlands
+### Next week forecast
 
-These variables represent **physical system conditions** in the electricity grid.
-
-| Variable | Interpretation |
-|--------|---------------|
-| Load | Electricity demand level |
-| Cross-border flows | Electricity imports and exports |
-| Wind by zone | Renewable supply differences between DK1 and DK2 |
+![Market Drivers forecast](PATH_TO_IMAGE)
 
 ---
 
-# Improve Model Results
+# 3. Extended Structural Model (Improve Market Drivers)
 
-Although the model remained strong, these additional variables introduced noise and slightly worsened performance.
+After obtaining strong results from the Market Drivers model, the project explored whether adding additional system-level variables could further improve the forecasts.
+
+The aim of this stage was to test whether a richer structural representation of the power system would improve predictive performance.
+
+## Additional variables tested
+
+The extended model included:
+
+- `load`
+- `flow_DE`
+- `flow_SE`
+- `flow_NO`
+- `flow_NL`
+
+These variables were intended to represent:
+
+- electricity demand
+- imports and exports with neighbouring markets
+- cross-border market coupling
+- additional structural conditions in the Danish power system
+
+## Why this extension was tested
+
+The idea behind this model was that electricity prices are not only affected by generation and fuel costs, but also by the **physical and cross-border structure of the grid**.
+
+This model therefore attempted to move closer to the real functioning of electricity markets by including:
+
+- system load
+- interconnection flows
+- structural market interactions
+
+## Improve Market Drivers results
+
+Although this extended version remained a strong model, it introduced additional noise and slightly worsened the forecast metrics.
 
 | Model | DK1 MAE | DK1 RMSE | DK2 MAE | DK2 RMSE |
 |------|--------:|---------:|--------:|---------:|
@@ -205,73 +304,140 @@ Although the model remained strong, these additional variables introduced noise 
 | **Market Drivers Model** | **7.55** | **13.36** | **8.68** | **15.79** |
 | Improve Market Drivers | 8.10 | 13.83 | 8.88 | 16.58 |
 
+This suggests that, in this case, more variables did not necessarily provide more useful signal.
+
 ---
 
-# Improve Model Coefficients
+## Improve Model Feature Importance / Coefficients
 
-## DK1 coefficients
+As with the previous model, feature importance analysis was performed to understand how the additional variables influenced predictions.
+
+### DK1 coefficients
 
 ![Improve DK1 coefficients](PATH_TO_IMAGE)
 
-## DK2 coefficients
+### DK2 coefficients
 
 ![Improve DK2 coefficients](PATH_TO_IMAGE)
 
 ---
 
-# Improve Model Actual vs Predicted
+## Improve Model Actual vs Predicted
 
-## DK1
+### DK1 — Actual vs Predicted
 
 ![Improve model DK1](PATH_TO_IMAGE)
 
-## DK2
+### DK2 — Actual vs Predicted
 
 ![Improve model DK2](PATH_TO_IMAGE)
 
 ---
 
+## Improve Model Forecast
+
+The extended structural model was also used to generate a next-week forecast.
+
+### Next week forecast
+
+![Improve Market Drivers forecast](PATH_TO_IMAGE)
+
+---
+
 # Forecast Comparison Across Models
 
-The forecasts produced by the three models were compared visually.
+The forecasts produced by the three modelling approaches were compared visually:
 
-## DK1 Forecast Comparison
+- Baseline Model
+- Market Drivers Model
+- Improve Market Drivers Model
+
+This comparison illustrates how increasing model complexity affects forecast behaviour in DK1 and DK2.
+
+### DK1 Forecast Comparison
 
 ![Forecast comparison DK1](PATH_TO_IMAGE)
 
-## DK2 Forecast Comparison
+### DK2 Forecast Comparison
 
 ![Forecast comparison DK2](PATH_TO_IMAGE)
 
 ---
 
-# Final Conclusion
+# Final Summary
 
 This project demonstrates how electricity price forecasting models can be progressively improved by incorporating additional market information.
 
 The modelling process evolved through three stages:
 
 1. **Baseline autoregressive model**  
-   Uses only historical electricity prices and calendar features.
+   Captures electricity price dynamics using lagged prices, calendar features and rolling statistics.
 
 2. **Market Drivers model**  
-   Introduces fundamental variables such as wind generation, temperature and gas prices.
+   Introduces key economic variables such as wind generation, temperature and gas prices.
 
 3. **Extended structural model**  
    Tests additional variables related to system demand and cross-border electricity flows.
 
-The results show that the **Market Drivers model achieved the best balance between predictive accuracy and economic interpretability**.
+## Main conclusion
 
-This highlights the importance of combining **time-series modelling with fundamental market drivers** when forecasting electricity prices.
+The **Market Drivers model achieved the best balance between predictive accuracy and economic interpretability**.
+
+This project shows that:
+
+- a strong time-series baseline is essential
+- adding relevant market fundamentals can significantly improve forecasts
+- adding too many structural variables may introduce noise and reduce performance
+
+In this case, the best results were obtained by combining:
+
+- autoregressive price structure
+- renewable generation
+- weather
+- fuel cost information
 
 ---
 
-# Author
+# Why This Project Matters
 
-Antonio Espino Bautista  
+Electricity markets are highly dynamic systems influenced by:
 
-Economics & Business Intelligence  
-Energy market analytics | Data analysis | Forecasting  
+- demand patterns
+- renewable generation
+- fuel prices
+- interconnections
+- market structure
 
-GitHub  
-https://github.com/antespbau
+This project demonstrates how **data pipelines, feature engineering and machine learning models** can be applied to electricity market analytics in a practical way.
+
+It showcases skills relevant for roles such as:
+
+- **Energy Market Analyst**
+- **Data Analyst in energy companies**
+- **Business Intelligence Analyst in utilities or trading firms**
+- **Power Market / Forecasting Analyst**
+
+---
+
+# How to Run the Project
+
+Run the complete pipeline in sequence:
+
+```bash
+python ingest.py
+python plot.py
+python plot_spread.py
+python features.py
+python test_best_window.py
+python forecast.py
+
+python wind.py
+python temperature.py
+python gas.py
+python Build_market.py
+python train_market_drivers_model.py
+python forecast_next_week_market_drivers.py
+
+python train_improve_market_drivers.py
+python forecast_next_week_improve_market_drivers.py
+python comparemodels.py
