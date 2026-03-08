@@ -54,10 +54,7 @@ The baseline model uses only historical prices and time-based features, treating
 
 Downloads electricity price data from the Danish Energy Data Service API.
 
-The script combines:
-
-- historical prices from **Elspotprices**
-- recent prices from **DayAheadPrices**
+The script combines: historical prices from **Elspotprices** and recent prices from **DayAheadPrices**
 
 The data is stored locally in a **DuckDB database**.
 
@@ -73,8 +70,9 @@ These plots allow quick inspection of: **long-term trends, seasonal behaviour an
 
 **DK1 vs DK2 electricity prices — historical price evolution**
 
-<img width="1292" height="729" src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/dk1_dk2_price_evolution.png"/>
-
+<p align="center">
+  <img src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/dk1_dk2_price_evolution.png" width="900"/>
+</p>
 The historical series shows no stable or simple pattern, but rather high volatility, sharp spikes and changing regimes over time. Over the last 36 months, DK1 and DK2 broadly follow similar trends, which reflects their integration in the wider power system. Still, visible differences between both zones suggest that regional conditions and transmission constraints continue to influence price formation.
 
 ---
@@ -101,7 +99,9 @@ Tests multiple historical training windows to determine the optimal amount of hi
 
 **Models are evaluated using:** MAE and RMSE  
 
-<img width="1292" height="729" src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/window_results_plot.png"/>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/window_results_plot.png" width="900"/>
+</p>
 
 Selecting the training window is important because too little history can make the model unstable, while too much can introduce outdated market conditions. The results indicate that a **12-month window** performs best for this model. This suggests that the most recent full annual cycle captures enough seasonal structure while remaining close to current market dynamics.
 
@@ -113,9 +113,11 @@ Selecting the training window is important because too little history can make t
 
 Trains the final baseline model and generates hourly electricity price forecasts for the next week.
 
-**Outputs include:** forecast CSV file, forecast visualisation and forecast summary table  
+**Outputs include:** forecast CSV file, forecast visualisation and forecast summary table 
 
-<img width="1292" height="729" src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/forecast_next_week_hourly.png"/>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/forecast_next_week_hourly.png" width="900"/>
+</p>
 
 ---
 
