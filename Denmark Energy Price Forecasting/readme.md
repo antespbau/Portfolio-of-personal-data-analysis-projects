@@ -208,16 +208,13 @@ This model produced the **best forecasting performance**.
 
 # Feature importance / coefficients
 
-<table>
-  <tr>
-    <td align="center"><b>DK1</b></td>
-    <td align="center"><b>DK2</b></td>
-  </tr>
-  <tr>
-    <td><img src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/PNG/price_correlation_DK1.png" width="500"/></td>
-    <td><img src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/PNG/price_correlation_DK2.png" width="500"/></td>
-  </tr>
-</table>
+### DK1
+
+<img width="700" src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/PNG/price_correlation_DK1.png"/>
+
+### DK2
+
+<img width="700" src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/PNG/price_correlation_DK2.png"/>
 
 ---
 
@@ -267,16 +264,14 @@ Although the model remained strong, these variables introduced additional noise 
 
 # Improve Model Feature Importance
 
-<table>
-  <tr>
-    <td align="center"><b>DK1</b></td>
-    <td align="center"><b>DK2</b></td>
-  </tr>
-  <tr>
-    <td><img src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/PNG/price_correlation_improve_market_drivers_DK1.png" width="500"/></td>
-    <td><img src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/PNG/price_correlation_improve_market_drivers_DK2.png" width="500"/></td>
-  </tr>
-</table>
+### DK1
+
+<img width="700" src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/PNG/price_correlation_improve_market_drivers_DK1.png"/>
+
+### DK2
+
+<img width="700" src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/PNG/price_correlation_improve_market_drivers_DK2.png"/>
+
 ---
 
 # Improve Model Actual vs Predicted
