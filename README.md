@@ -11,13 +11,13 @@ Hi, I’m Antonio Espino Bautista. This repo is a small portfolio of personal da
 **What I did:**
 - Extracted and cleaned Danish electricity price data from public energy market sources
 - Built an end-to-end forecasting pipeline including ingestion, feature engineering, model training and forecast visualisation
-- engineered time-series predictors such as lagged prices, rolling statistics and calendar variables
-- tested different historical training windows to improve forecast performance
-- trained **machine learning forecasting models with XGBoost** to predict next-week hourly electricity prices
-- extended the baseline model with **market drivers** such as wind generation, temperature and gas prices to improve economic interpretability
-- tested a more complex structural version including load and cross-border flows, and compared whether additional variables improved or worsened performance
-- evaluated the models using **MAE** and **RMSE** across DK1 and DK2
-- produced forecast comparison charts showing how the different modelling approaches behave in each price zone
+- Engineered time-series predictors such as lagged prices, rolling statistics and calendar variables
+- Tested different historical training windows to improve forecast performance
+- Trained **machine learning forecasting models with XGBoost** to predict next-week hourly electricity prices
+- Extended the baseline model with **market drivers** such as wind generation, temperature and gas prices to improve economic interpretability
+- Tested a more complex structural version including load and cross-border flows, and compared whether additional variables improved or worsened performance
+- Evaluated the models using **MAE** and **RMSE** across DK1 and DK2
+- Produced forecast comparison charts showing how the different modelling approaches behave in each price zone
 
 ➡️ Folder: [Denmark electricity price forecasting](Denmark%20Energy%20Price%20Forecasting/)
 
