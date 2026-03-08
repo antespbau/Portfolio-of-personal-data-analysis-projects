@@ -6,17 +6,25 @@ Hi, I’m Antonio Espino Bautista. This repo is a small portfolio of personal da
 
 ### 1) Denmark electricity price forecasting (Python)
 
-**Goal:** analyse and forecast day-ahead electricity prices in Denmark (DK1 and DK2 bidding zones).
+**Goal:** analyse and forecast day-ahead electricity prices in Denmark (DK1 and DK2 bidding zones), comparing different modelling approaches.
 
 **What I did:**
-- extracted and cleaned electricity price data
-- explored price behaviour across Danish bidding zones
-- built a simple forecasting workflow for next-week hourly prices
-- generated visual outputs and forecast summary tables
+- extracted and cleaned Danish electricity price data
+- explored price behaviour across the two Danish bidding zones
+- built a baseline time-series forecasting model
+- extended the analysis with a **Market Drivers model** using wind generation, temperature and gas prices
+- tested a more complex structural model with load and cross-border flows
+- compared model performance using **MAE** and **RMSE**
+- generated next-week forecast comparison charts for DK1 and DK2
 
 ➡️ Folder: [Denmark electricity price forecasting](Denmark%20Energy%20Price%20Forecasting/)
-**Next week hourly forecast** — projected electricity prices for the coming week  
-<img width="1292" height="729" alt="forecast_next_week_hourly" src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/forecast_next_week_hourly.png" />
+
+**Next week forecast comparison** — baseline vs market drivers vs extended model  
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/PNG/forecast_comparison_models_DK1.png" width="450"/>
+  <img src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/PNG/forecast_comparison_models_DK2.png" width="450"/>
+</p>
 
 
 ### 2) ESG scoring dashboard (R / Power BI)
