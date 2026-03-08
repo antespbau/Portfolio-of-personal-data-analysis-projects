@@ -206,7 +206,7 @@ These variables attempt to represent **physical grid conditions and internationa
 
 ---
 
-# Improve Model Results
+# Improved Model Results
 
 | Model | DK1 MAE | DK1 RMSE | DK2 MAE | DK2 RMSE |
 |------|--------:|---------:|--------:|---------:|
@@ -218,7 +218,7 @@ Although the model remained strong, these variables introduced additional noise 
 
 ---
 
-# Improve Model Feature Importance
+# Improved Model Feature Importance
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/PNG/price_correlation_improve_market_drivers_DK1.png" width="450"/>
