@@ -208,13 +208,16 @@ This model produced the **best forecasting performance**.
 
 # Feature importance / coefficients
 
-### DK1
-
-<img width="1292" height="729" src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/PNG/price_correlation_DK1.png"/>
-
-### DK2
-
-<img width="1292" height="729" src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/PNG/price_correlation_DK2.png"/>
+<table>
+  <tr>
+    <td align="center"><b>DK1</b></td>
+    <td align="center"><b>DK2</b></td>
+  </tr>
+  <tr>
+    <td><img src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/PNG/price_correlation_DK1.png" width="500"/></td>
+    <td><img src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/PNG/price_correlation_DK2.png" width="500"/></td>
+  </tr>
+</table>
 
 ---
 
@@ -264,8 +267,16 @@ Although the model remained strong, these variables introduced additional noise 
 
 # Improve Model Feature Importance
 
-<img width="1292" height="729" src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/PNG/feature_importance_improve_market_drivers.png"/>
-
+<table>
+  <tr>
+    <td align="center"><b>DK1</b></td>
+    <td align="center"><b>DK2</b></td>
+  </tr>
+  <tr>
+    <td><img src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/PNG/price_correlation_improve_market_drivers_DK1.png" width="500"/></td>
+    <td><img src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/PNG/price_correlation_improve_market_drivers_DK2.png" width="500"/></td>
+  </tr>
+</table>
 ---
 
 # Improve Model Actual vs Predicted
