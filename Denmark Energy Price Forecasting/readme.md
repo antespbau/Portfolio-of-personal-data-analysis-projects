@@ -36,11 +36,7 @@ Models are evaluated using:
 - **MAE (Mean Absolute Error)**
 - **RMSE (Root Mean Squared Error)**
 
----
-
-# Technologies Used
-
- Python, pandas, numpy, matplotlib, scikit-learn, xgboost, duckdb, requests  
+**Technologies Used:** Python, pandas, numpy, matplotlib, scikit-learn, xgboost, duckdb, requests  
 
 ---
 
