@@ -4,18 +4,20 @@ Hi, I’m Antonio Espino Bautista. This repo is a small portfolio of personal da
 
 ## Projects
 
-### 1) Denmark electricity price forecasting (Python)
+### 1) Denmark electricity price forecasting (Python / Machine Learning)
 
-**Goal:** analyse and forecast day-ahead electricity prices in Denmark (DK1 and DK2 bidding zones), comparing different modelling approaches.
+**Goal:** analyse and forecast day-ahead electricity prices in Denmark (DK1 and DK2 bidding zones) using time-series features and machine learning models.
 
 **What I did:**
-- extracted and cleaned Danish electricity price data
-- explored price behaviour across the two Danish bidding zones
-- built a baseline time-series forecasting model
-- extended the analysis with a **Market Drivers model** using wind generation, temperature and gas prices
-- tested a more complex structural model with load and cross-border flows
-- compared model performance using **MAE** and **RMSE**
-- generated next-week forecast comparison charts for DK1 and DK2
+- Extracted and cleaned Danish electricity price data from public energy market sources
+- Built an end-to-end forecasting pipeline including ingestion, feature engineering, model training and forecast visualisation
+- engineered time-series predictors such as lagged prices, rolling statistics and calendar variables
+- tested different historical training windows to improve forecast performance
+- trained **machine learning forecasting models with XGBoost** to predict next-week hourly electricity prices
+- extended the baseline model with **market drivers** such as wind generation, temperature and gas prices to improve economic interpretability
+- tested a more complex structural version including load and cross-border flows, and compared whether additional variables improved or worsened performance
+- evaluated the models using **MAE** and **RMSE** across DK1 and DK2
+- produced forecast comparison charts showing how the different modelling approaches behave in each price zone
 
 ➡️ Folder: [Denmark electricity price forecasting](Denmark%20Energy%20Price%20Forecasting/)
 
@@ -25,7 +27,6 @@ Hi, I’m Antonio Espino Bautista. This repo is a small portfolio of personal da
   <img src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/PNG/forecast_comparison_models_DK1.png" width="450"/>
   <img src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/PNG/forecast_comparison_models_DK2.png" width="450"/>
 </p>
-
 
 ### 2) ESG scoring dashboard (R / Power BI)
 **Goal:** create a simple ESG scoring approach and compare entities.
