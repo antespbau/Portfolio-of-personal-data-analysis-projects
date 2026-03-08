@@ -217,13 +217,14 @@ To better understand the model behaviour, feature importance and coefficient ana
 
 This allows the model to be interpreted not only as a forecasting tool but also as a **market analysis framework**.
 
-### DK1 coefficients
+### Market Drivers — DK1
+![Market Drivers DK1 coefficients](https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/price_correlation_DK1.png)
 
-![DK1 coefficients](PATH_TO_IMAGE)
+### Market Drivers — DK2
+![Market Drivers DK2 coefficients](https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/price_correlation_DK2.png)
 
-### DK2 coefficients
-
-![DK2 coefficients](PATH_TO_IMAGE)
+### Improve Market Drivers — Feature Importance
+![Improve Market Drivers feature importance](https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/feature_importance_improve_market_drivers.png)
 
 These results help identify which variables contribute most to electricity price formation in each Danish bidding zone.
 
@@ -239,14 +240,11 @@ This comparison helps verify whether the model captures:
 - volatility spikes
 - short-term trends
 
-### DK1 — Actual vs Predicted
+### Market Drivers — DK1
+![Actual vs Predicted DK1](https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/actual_vs_predicted_market_drivers_DK1.png)
 
-![Actual vs predicted DK1](PATH_TO_IMAGE)
-
-### DK2 — Actual vs Predicted
-
-![Actual vs predicted DK2](PATH_TO_IMAGE)
-
+### Market Drivers — DK2
+![Actual vs Predicted DK2](https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/actual_vs_predicted_market_drivers_DK2.png)
 ---
 
 ## Market Drivers Forecast
@@ -254,10 +252,6 @@ This comparison helps verify whether the model captures:
 The trained Market Drivers model was used to generate **hourly electricity price forecasts for the next week**.
 
 This stage shows how the pipeline can be used in a practical forecasting setting using both time-series structure and market fundamentals.
-
-### Next week forecast
-
-![Market Drivers forecast](PATH_TO_IMAGE)
 
 ---
 
@@ -312,36 +306,20 @@ This suggests that, in this case, more variables did not necessarily provide mor
 
 As with the previous model, feature importance analysis was performed to understand how the additional variables influenced predictions.
 
-### DK1 coefficients
+### DK1
+![Improve correlation DK1](https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/price_correlation_improve_market_drivers_DK1.png)
 
-![Improve DK1 coefficients](PATH_TO_IMAGE)
-
-### DK2 coefficients
-
-![Improve DK2 coefficients](PATH_TO_IMAGE)
-
+### DK2
+![Improve correlation DK2](https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/price_correlation_improve_market_drivers_DK2.png)
 ---
 
 ## Improve Model Actual vs Predicted
 
-### DK1 — Actual vs Predicted
+### Improve Market Drivers — DK1
+![Improve Model DK1](https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/reduced_model_actual_vs_predicted_DK1.png)
 
-![Improve model DK1](PATH_TO_IMAGE)
-
-### DK2 — Actual vs Predicted
-
-![Improve model DK2](PATH_TO_IMAGE)
-
----
-
-## Improve Model Forecast
-
-The extended structural model was also used to generate a next-week forecast.
-
-### Next week forecast
-
-![Improve Market Drivers forecast](PATH_TO_IMAGE)
-
+### Improve Market Drivers — DK2
+![Improve Model DK2](https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/reduced_model_actual_vs_predicted_DK2.png)
 ---
 
 # Forecast Comparison Across Models
