@@ -101,25 +101,11 @@ This highlights structural differences between the two Danish price zones.
 
 Creates time-series features used for forecasting.
 
-### Calendar features
+**Calendar features:** hour of day, day of week, month and weekend indicator  
 
-- hour of day  
-- day of week  
-- month  
-- weekend indicator  
+**Lag features:** price lag 1 hour, price lag 24 hours and price lag 168 hours  
 
-### Lag features
-
-- price lag 1 hour  
-- price lag 24 hours  
-- price lag 168 hours  
-
-### Rolling statistics
-
-- 24 hour rolling mean  
-- 24 hour rolling standard deviation  
-- 168 hour rolling mean  
-- 168 hour rolling standard deviation  
+**Rolling statistics:** 24 hour rolling mean, 24 hour rolling standard deviation, 168 hour rolling mean and 168 hour rolling standard deviation  
 
 ---
 
@@ -129,10 +115,7 @@ Creates time-series features used for forecasting.
 
 Tests multiple historical training windows to determine the optimal amount of historical information.
 
-Models are evaluated using:
-
-- MAE  
-- RMSE  
+**Models are evaluated using:** MAE and RMSE  
 
 <img width="1292" height="729" src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/window_results_plot.png"/>
 
@@ -144,11 +127,7 @@ Models are evaluated using:
 
 Trains the final baseline model and generates hourly electricity price forecasts for the next week.
 
-Outputs include:
-
-- forecast CSV file  
-- forecast visualisation  
-- forecast summary table  
+**Outputs include:** forecast CSV file, forecast visualisation and forecast summary table  
 
 <img width="1292" height="729" src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Denmark%20Energy%20Price%20Forecasting/PNG/forecast_next_week_hourly.png"/>
 
@@ -166,11 +145,7 @@ The idea was to move from a purely autoregressive approach to a model that refle
 
 ## Added variables
 
-The model incorporates:
-
-- **wind_generation**  
-- **temperature**  
-- **gas_price**
+The model incorporates:**wind_generation**, **temperature** and **gas_price**
 
 These variables represent three key forces in electricity markets.
 
@@ -223,15 +198,9 @@ The final stage tested additional structural variables.
 
 Added variables:
 
-- electricity **load**
-- cross-border electricity **flows**
-
-with neighbouring markets:
-
-- Germany  
-- Sweden  
-- Norway  
-- Netherlands  
+- Electricity **load**
+- Cross-border electricity **flows**
+- Neighbouring markets: **Germany, Sweden, Norway and Netherlands**  
 
 These variables attempt to represent **physical grid conditions and international electricity trading dynamics**.
 
