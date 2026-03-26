@@ -131,7 +131,7 @@ Models are evaluated using:
 ## Cumulative PnL
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Danish%20Power%20Market%20Analytics%3A%20Forecasting%20and%20PnL%20Analysis//PNG/PNG/daily_cumulative_pnl.png" width="900"/>
+  <img src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Danish%20Power%20Market%20Analytics%3A%20Forecasting%20and%20PnL%20Analysis/PNG/PNG/daily_cumulative_pnl.png" width="900"/>
 </p>
 
 ---
@@ -139,7 +139,7 @@ Models are evaluated using:
 ## Drawdown analysis
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Danish%20Power%20Market%20Analytics%3A%20Forecasting%20and%20PnL%20Analysis/PNG/PNG/daily_drawdown.png" width="900"/>
+  <img src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Danish%20Power%20Market%20Analytics%3A%20Forecasting%20and%20PnL%20Analysis/PNG/PNG/drawdown.png" width="900"/>
 </p>
 
 ---
