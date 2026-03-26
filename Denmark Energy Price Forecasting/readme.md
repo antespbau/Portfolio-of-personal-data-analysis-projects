@@ -236,11 +236,89 @@ The comparison shows a clear trade-off between simplicity, economic realism and 
 
 ---
 
-# 5. Final Summary
+---
 
-This project analyses Danish day-ahead electricity prices through three modelling stages, moving from a pure time-series baseline to models that incorporate market fundamentals and broader structural variables. The results show that price history alone contains useful information, but forecast accuracy improves significantly when the model includes economically meaningful drivers such as wind generation, temperature and gas prices.
+# 5. Directional Trading and PnL Analysis
 
-Overall, the **Market Drivers model** achieved the best balance between predictive performance and economic interpretability. The project therefore highlights an important conclusion for applied energy analytics: the most useful forecasting model is not necessarily the most complex one, but the one that combines relevant market signals with a robust and focused structure.
+After developing the forecasting models, the project was extended to analyse whether price predictions could be translated into **trading decisions**.
+
+The objective of this stage is to evaluate the practical usefulness of the forecasts by measuring their impact on **profit and loss (PnL)** under a simple trading framework.
+
+---
+
+## Initial trading approach
+
+The first strategy generated trading signals by comparing forecasted prices with a benchmark level.
+
+- Buy signal if forecast is significantly above the benchmark  
+- Sell signal if forecast is significantly below the benchmark  
+
+Although this approach produced very high win rates, the results were misleading. Profits were calculated relative to the benchmark instead of real price movements, making the strategy artificially profitable.
+
+---
+
+## Corrected backtesting framework
+
+To obtain realistic results, the trading logic was redesigned.
+
+- PnL is calculated using **actual price changes**  
+- Signals are evaluated based on **real market movement**  
+- Transaction costs are included  
+
+---
+
+## Directional modelling approach
+
+To improve performance, the modelling problem was redefined.
+
+Instead of predicting price levels, the model predicts **direction of price movement**.
+
+Key changes:
+
+- Target variable defined as **next-hour price change**  
+- Model outputs **probability of upward movement**  
+- Trading signals generated only when confidence is sufficiently high  
+
+---
+
+## Strategy results
+
+| Market | Total PnL | Win Rate | Avg Trade PnL | Sharpe-like | Max Drawdown |
+|--------|----------:|---------:|--------------:|------------:|-------------:|
+| DK1 | 33129 | 64.1% | 7.13 | 0.40 | -114 |
+| DK2 | 41550 | 66.1% | 8.78 | 0.42 | -91 |
+
+---
+
+## Cumulative PnL
+
+<p align="center">
+  <img src="outputs/plots/daily_cumulative_pnl.png" width="900"/>
+</p>
+
+---
+
+## Drawdown analysis
+
+<p align="center">
+  <img src="outputs/plots/daily_drawdown.png" width="900"/>
+</p>
+
+---
+
+# 6. Final Summary
+
+This project analyses Danish day-ahead electricity prices through multiple modelling stages, moving from a pure time-series baseline to models that incorporate market fundamentals and broader structural variables.
+
+The results show that price history alone contains useful information, but forecast accuracy improves significantly when the model includes economically meaningful drivers such as wind generation, temperature and gas prices.
+
+The Market Drivers model achieved the best balance between predictive performance and economic interpretability. Adding further structural variables increased complexity, but introduced additional noise without improving results.
+
+Extending the analysis to trading revealed an important limitation: accurate price forecasts do not necessarily translate into profitable trading strategies. The initial approach based on price levels produced misleading results due to an incorrect PnL definition.
+
+By reformulating the problem as a directional prediction task, the model becomes better aligned with trading objectives. This adjustment leads to consistent positive PnL, improved win rates and controlled drawdowns across both Danish price areas.
+
+Overall, the project highlights a key insight for applied energy analytics: the most effective models are not the most complex ones, but those that combine relevant market signals with a structure aligned to the final decision-making objective.
 
 ---
 
