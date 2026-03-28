@@ -1,15 +1,29 @@
 # Danish Power Market Analytics: Forecasting and PnL Analysis
 
-This project built an end-to-end data pipeline to analise and forecast Danish electricity. It is composed by two parts: the first part is the forecast of the price day ahead throught three different models, the workflow covers **data ingestion, exploratory analysis, feature engineering, model evaluation and next-week forecasting**. The second part extend into  **directional trading and PnL analysis**.
+This project builds an end-to-end data pipeline to analyse and forecast Danish electricity prices. It is composed of two main parts:
+
+1. **Price Forecasting**  
+   Development and evaluation of three models to predict day-ahead electricity prices, covering:
+   - data ingestion  
+   - exploratory analysis  
+   - feature engineering  
+   - model training and evaluation  
+   - next-week forecasting  
+
+2. **Directional Trading & PnL Analysis**  
+   Transformation of model outputs into trading signals and evaluation of profitability.
+
+The analysis focuses on the two Danish bidding zones:
 
 - **DK1 — West Denmark**
 - **DK2 — East Denmark**
 
-The aim objective is to convert the results into consistent and profitable tradint decisions. 
+**Objective:**  
+To convert forecasting outputs into **consistent and profitable trading decisions**.
 
 ---
 
-# FIRST PART OF THE PROJECT 
+# FIRST PART OF THE PROJECT
 
 # Project Overview
 
@@ -19,23 +33,23 @@ Electricity prices in Denmark are driven by:
 - seasonality  
 - renewable generation (especially wind)  
 - fuel prices  
-- cross-border market interactions
-- Energy Loads
+- cross-border flows  
+- system load  
 
-To improve the results, there are gonna be three models: 
+To progressively improve performance, three modelling approaches are implemented:
 
 | Stage | Description |
 |------|-------------|
 | **1. Baseline forecasting model** | Uses only historical prices and temporal patterns |
 | **2. Market Drivers model** | Adds wind generation, temperature and gas prices |
-| **3. Extended structural model** | Adds load, cross-border flows |
+| **3. Extended structural model** | Adds load and cross-border flows |
 
 Models are evaluated using:
 
 - **MAE (Mean Absolute Error)**
 - **RMSE (Root Mean Squared Error)**
 
-**Technologies:** Python, pandas, numpy, matplotlib, scikit-learn, xgboost, duckdb, requests...  
+**Technologies:** Python, pandas, numpy, matplotlib, scikit-learn, xgboost, duckdb, requests  
 
 ---
 
@@ -50,8 +64,8 @@ Models are evaluated using:
 **Observations:**
 
 - Electricity prices are highly volatile with frequent spikes  
-- DK1 and DK2 move similarly but diverge at specific periods  
-- Strong intraday and short-term cyclical behaviour  
+- DK1 and DK2 follow similar patterns but diverge during stress periods  
+- Strong intraday and weekly seasonality is visible  
 
 ---
 
@@ -61,11 +75,15 @@ Models are evaluated using:
   <img src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Danish%20Power%20Market%20Analytics%3A%20Forecasting%20and%20PnL%20Analysis/PNG/PNG/window_results_plot.png" width="900"/>
 </p>
 
+The optimal training window is selected using:
+
+➡️ [`test_best_window.py`](Danish%20Power%20Market%20Analytics%3A%20Forecasting%20and%20PnL%20Analysis/Scripts/Basic%20model/basic%20model/test_best_window.py)
+
 **Observations:**
 
-First of all, we trained the model trhought [test_best_window.py](Danish%20Power%20Market%20Analytics%3A%20Forecasting%20and%20PnL%20Analysis/Scripts/Basic%20model/basic%20model/test_best_window.py) window Intermediate windows (around 12 months) perform best  
-- Short windows: unstable models  
-- Long windows: include outdated market conditions  
+- Intermediate windows (~12 months) provide the best performance  
+- Short windows → unstable and noisy predictions  
+- Long windows → include outdated market dynamics  
 
 ---
 
@@ -77,9 +95,9 @@ First of all, we trained the model trhought [test_best_window.py](Danish%20Power
 
 **Observations:**
 
-- Forecasts follow the general trend  
+- The model captures the overall trend and seasonality  
 - Predictions are smoother than real prices  
-- Large spikes are underestimated  
+- Price spikes are consistently underestimated  
 
 **Conclusion:**
 
@@ -98,16 +116,16 @@ The baseline model captures structure but lacks responsiveness to real market dr
 
 **Observations:**
 
-- Lagged prices remain dominant (strong persistence)  
-- Wind generation shows a clear negative relationship with price  
-- Temperature is negatively correlated with price  
-- Gas price has a weaker but positive relationship  
+- Lagged prices dominate → strong short-term persistence  
+- Wind generation has a clear negative correlation with prices  
+- Temperature is negatively related (demand effect)  
+- Gas price shows a weaker but positive relationship  
 
 **Interpretation:**
 
-- Wind acts as a supply shock → lowers prices  
-- Temperature proxies demand → higher temperature reduces demand  
-- Gas influences marginal cost but is less dominant short-term  
+- Wind = supply shock → reduces prices  
+- Temperature = demand proxy  
+- Gas = marginal cost driver  
 
 ---
 
@@ -120,13 +138,13 @@ The baseline model captures structure but lacks responsiveness to real market dr
 
 **Observations:**
 
-- Better alignment with actual prices than baseline  
-- Improved reaction to market changes  
-- Peaks still underestimated but better timed  
+- Strong improvement vs baseline  
+- Better timing of price movements  
+- Spikes still underestimated but more aligned  
 
 **Conclusion:**
 
-Adding market fundamentals improves predictive quality and economic interpretability.
+Including market fundamentals significantly improves performance.
 
 ---
 
@@ -142,8 +160,8 @@ Adding market fundamentals improves predictive quality and economic interpretabi
 **Observations:**
 
 - Additional variables (flows, load) appear but are not dominant  
-- Core drivers (lags, wind) remain the strongest  
-- Some variables show weak or inconsistent relationships  
+- Core drivers (lags, wind) still explain most of the behaviour  
+- Some variables introduce noise  
 
 ---
 
@@ -156,13 +174,13 @@ Adding market fundamentals improves predictive quality and economic interpretabi
 
 **Observations:**
 
-- No clear improvement over Market Drivers model  
-- Predictions become slightly noisier  
-- Peaks still not well captured  
+- No consistent improvement over Market Drivers  
+- Slightly noisier predictions  
+- No better capture of extreme movements  
 
 **Conclusion:**
 
-Additional structural variables increase complexity without improving performance.
+Additional structural variables increase complexity without improving accuracy.
 
 ---
 
@@ -175,21 +193,23 @@ Additional structural variables increase complexity without improving performanc
 
 **Observations:**
 
-- Baseline → too smooth and underestimates volatility  
-- Extended model → more unstable and overreacts  
-- Market Drivers → best balance between stability and responsiveness  
+- Baseline → too smooth, underestimates volatility  
+- Extended → unstable and noisy  
+- Market Drivers → best balance  
 
 **Conclusion:**
 
-The Market Drivers model provides the most reliable forecasts.
+The Market Drivers model is selected as the best-performing model.
 
 ---
+
+# SECOND PART OF THE PROJECT — TRADING
 
 # 5. Directional Trading and PnL Analysis
 
 ## Motivation
 
-Forecasting price levels does not directly translate into trading performance.
+Forecasting price levels does not necessarily translate into trading performance.
 
 The problem is reformulated as:
 
@@ -206,10 +226,10 @@ The problem is reformulated as:
 
 **Observations:**
 
-- Positive cumulative PnL in both markets  
-- Win rate above 60%  
-- Positive average trade returns  
-- Drawdowns are limited relative to gains  
+- Positive PnL in both markets  
+- Win rate consistently above 60%  
+- Stable average returns  
+- Controlled drawdowns  
 
 ---
 
@@ -221,9 +241,9 @@ The problem is reformulated as:
 
 **Observations:**
 
-- Steady upward growth over time  
-- DK2 consistently outperforms DK1  
-- Performance is not driven by a single period  
+- Smooth and consistent growth  
+- DK2 outperforms DK1  
+- No single period drives performance  
 
 ---
 
@@ -235,32 +255,32 @@ The problem is reformulated as:
 
 **Observations:**
 
-- Frequent but controlled drawdowns  
-- Losses are short-lived  
-- No prolonged negative periods  
+- Frequent but limited losses  
+- No prolonged drawdowns  
+- Risk remains controlled  
 
 ---
 
 ## Key Insight
 
-The model is not perfect at predicting price levels, but:
+> The model is not perfect at predicting price levels, but it is effective at predicting direction.
 
-> it is effective at capturing **direction**, which is what drives trading performance
+This is what makes the strategy profitable.
 
 ---
 
 # 6. Final Summary
 
-- Electricity prices show strong short-term persistence  
-- Market fundamentals (especially wind) significantly improve forecasts  
-- Adding more variables does not improve performance  
-- The Market Drivers model provides the best balance  
+- Electricity prices show strong persistence  
+- Wind is the most relevant external driver  
+- Adding too many variables degrades performance  
+- The Market Drivers model performs best  
 
 **Final conclusion:**
 
-> Forecasting accuracy alone is not sufficient — models must be aligned with the decision-making objective.
+> Forecasting accuracy alone is not enough — models must be aligned with the trading objective.
 
-In this case, reformulating the problem as a directional prediction task enables the model to generate **consistent and profitable trading outcomes**.
+By reframing the problem as a directional task, the model generates **consistent and profitable trading results**.
 
 ---
 
