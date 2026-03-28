@@ -1,42 +1,41 @@
 # Danish Power Market Analytics: Forecasting and PnL Analysis
 
-This project builds an end-to-end data pipeline to analyse and forecast Danish electricity prices in the two bidding zones:
+This project built an end-to-end data pipeline to analise and forecast Danish electricity. It is composed by two parts: the first part is the forecast of the price day ahead throught three different models, the workflow covers **data ingestion, exploratory analysis, feature engineering, model evaluation and next-week forecasting**. The second part extend into  **directional trading and PnL analysis**.
 
 - **DK1 — West Denmark**
 - **DK2 — East Denmark**
 
-The workflow covers **data ingestion, exploratory analysis, feature engineering, model evaluation and next-week price forecasting** for the day-ahead electricity market.
-
-The project started with a **pure time-series forecasting model**, and was later extended with **market fundamentals** and then with **additional structural variables** to test whether forecasting performance could be improved further.
-
-The objective is to demonstrate practical data analytics and forecasting techniques applied to energy markets.
+The aim objective is to convert the results into consistent and profitable tradint decisions. 
 
 ---
 
+# FIRST PART OF THE PROJECT 
+
 # Project Overview
 
-Electricity prices in Denmark vary depending on:
+Electricity prices in Denmark are driven by:
 
 - demand patterns  
 - seasonality  
-- renewable generation  
+- renewable generation (especially wind)  
 - fuel prices  
-- differences between price zones  
+- cross-border market interactions
+- Energy Loads
 
-This project evolves through **three modelling stages**:
+To improve the results, there are gonna be three models: 
 
 | Stage | Description |
 |------|-------------|
-| **1. Baseline forecasting model** | Pure time-series model using lagged prices, calendar effects and rolling statistics |
-| **2. Market Drivers model** | Extends the baseline model with key market fundamentals such as wind generation, temperature and gas prices |
-| **3. Extended structural model** | Tests additional variables such as load and cross-border flows |
+| **1. Baseline forecasting model** | Uses only historical prices and temporal patterns |
+| **2. Market Drivers model** | Adds wind generation, temperature and gas prices |
+| **3. Extended structural model** | Adds load, cross-border flows |
 
 Models are evaluated using:
 
 - **MAE (Mean Absolute Error)**
 - **RMSE (Root Mean Squared Error)**
 
-**Technologies Used:** Python, pandas, numpy, matplotlib, scikit-learn, xgboost, duckdb, requests  
+**Technologies:** Python, pandas, numpy, matplotlib, scikit-learn, xgboost, duckdb, requests...  
 
 ---
 
@@ -48,6 +47,12 @@ Models are evaluated using:
   <img src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Danish%20Power%20Market%20Analytics%3A%20Forecasting%20and%20PnL%20Analysis/PNG/PNG/dk1_dk2_price_evolution.png" width="900"/>
 </p>
 
+**Observations:**
+
+- Electricity prices are highly volatile with frequent spikes  
+- DK1 and DK2 move similarly but diverge at specific periods  
+- Strong intraday and short-term cyclical behaviour  
+
 ---
 
 ## Training window optimisation
@@ -56,6 +61,12 @@ Models are evaluated using:
   <img src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Danish%20Power%20Market%20Analytics%3A%20Forecasting%20and%20PnL%20Analysis/PNG/PNG/window_results_plot.png" width="900"/>
 </p>
 
+**Observations:**
+
+First of all, we trained the model trhought [test_best_window.py](Danish%20Power%20Market%20Analytics%3A%20Forecasting%20and%20PnL%20Analysis/Scripts/Basic%20model/basic%20model/test_best_window.py) window Intermediate windows (around 12 months) perform best  
+- Short windows: unstable models  
+- Long windows: include outdated market conditions  
+
 ---
 
 ## Forecast generation
@@ -63,6 +74,16 @@ Models are evaluated using:
 <p align="center">
   <img src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Danish%20Power%20Market%20Analytics%3A%20Forecasting%20and%20PnL%20Analysis/PNG/PNG/forecast_next_week_hourly.png" width="900"/>
 </p>
+
+**Observations:**
+
+- Forecasts follow the general trend  
+- Predictions are smoother than real prices  
+- Large spikes are underestimated  
+
+**Conclusion:**
+
+The baseline model captures structure but lacks responsiveness to real market drivers.
 
 ---
 
@@ -75,6 +96,19 @@ Models are evaluated using:
   <img src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Danish%20Power%20Market%20Analytics%3A%20Forecasting%20and%20PnL%20Analysis/PNG/PNG/price_correlation_DK2.png" width="450"/>
 </p>
 
+**Observations:**
+
+- Lagged prices remain dominant (strong persistence)  
+- Wind generation shows a clear negative relationship with price  
+- Temperature is negatively correlated with price  
+- Gas price has a weaker but positive relationship  
+
+**Interpretation:**
+
+- Wind acts as a supply shock → lowers prices  
+- Temperature proxies demand → higher temperature reduces demand  
+- Gas influences marginal cost but is less dominant short-term  
+
 ---
 
 ## Actual vs Predicted Prices
@@ -83,6 +117,16 @@ Models are evaluated using:
   <img src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Danish%20Power%20Market%20Analytics%3A%20Forecasting%20and%20PnL%20Analysis/PNG/PNG/actual_vs_predicted_market_drivers_DK1.png" width="750"/>
   <img src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Danish%20Power%20Market%20Analytics%3A%20Forecasting%20and%20PnL%20Analysis/PNG/PNG/actual_vs_predicted_market_drivers_DK2.png" width="750"/>
 </p>
+
+**Observations:**
+
+- Better alignment with actual prices than baseline  
+- Improved reaction to market changes  
+- Peaks still underestimated but better timed  
+
+**Conclusion:**
+
+Adding market fundamentals improves predictive quality and economic interpretability.
 
 ---
 
@@ -95,6 +139,12 @@ Models are evaluated using:
   <img src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Danish%20Power%20Market%20Analytics%3A%20Forecasting%20and%20PnL%20Analysis/PNG/PNG/price_correlation_improve_market_drivers_DK2.png" width="450"/>
 </p>
 
+**Observations:**
+
+- Additional variables (flows, load) appear but are not dominant  
+- Core drivers (lags, wind) remain the strongest  
+- Some variables show weak or inconsistent relationships  
+
 ---
 
 ## Improved Model Actual vs Predicted
@@ -103,6 +153,16 @@ Models are evaluated using:
   <img src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Danish%20Power%20Market%20Analytics%3A%20Forecasting%20and%20PnL%20Analysis/PNG/PNG/reduced_model_actual_vs_predicted_DK1.png" width="700"/>
   <img src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Danish%20Power%20Market%20Analytics%3A%20Forecasting%20and%20PnL%20Analysis/PNG/PNG/reduced_model_actual_vs_predicted_DK2.png" width="700"/>
 </p>
+
+**Observations:**
+
+- No clear improvement over Market Drivers model  
+- Predictions become slightly noisier  
+- Peaks still not well captured  
+
+**Conclusion:**
+
+Additional structural variables increase complexity without improving performance.
 
 ---
 
@@ -113,109 +173,43 @@ Models are evaluated using:
   <img src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Danish%20Power%20Market%20Analytics%3A%20Forecasting%20and%20PnL%20Analysis/PNG/PNG/forecast_comparison_models_DK2.png" width="900"/>
 </p>
 
+**Observations:**
+
+- Baseline → too smooth and underestimates volatility  
+- Extended model → more unstable and overreacts  
+- Market Drivers → best balance between stability and responsiveness  
+
+**Conclusion:**
+
+The Market Drivers model provides the most reliable forecasts.
+
 ---
 
 # 5. Directional Trading and PnL Analysis
 
-After evaluating the forecasting models, the project was extended to analyse whether the information contained in the predictions could be translated into **directional trading signals**.
+## Motivation
 
-The purpose of this stage is not simply to forecast the level of electricity prices, but to assess whether the model can correctly anticipate **the next short-term movement of the market** and convert this into a trading decision.
+Forecasting price levels does not directly translate into trading performance.
 
----
+The problem is reformulated as:
 
-## Why a directional model was needed
-
-The initial trading tests used forecasted price levels to create trading signals. However, this produced misleading results because forecasting a price level well does not necessarily mean forecasting whether the next movement will be upward or downward.
-
-This is a key distinction in trading applications:
-
-- **Price forecasting** asks: what price level is likely?
-- **Directional trading** asks: will the price move up or down next?
-
-Because of this, the trading framework was redesigned as a **directional prediction problem**.
+> predicting the **direction of the next price movement**
 
 ---
 
-## Step 1. Build the directional dataset
-
-A new dataset was created using the original forecasting variables together with additional features designed to capture short-term changes.
-
-Examples include:
-
-- lagged prices  
-- rolling statistics  
-- temperature, wind generation and gas prices  
-- changes in those variables over time  
-- spread features between DK1 and DK2  
-
-The target variable was redefined as the **next-hour price movement**, allowing the model to learn whether the price is more likely to move upward or downward.
-
----
-
-## Step 2. Train a directional model
-
-A new model was trained to predict the **probability of upward movement** rather than the exact future price level.
-
-This makes the model output directly relevant for trading, because it provides a measure of confidence about direction.
-
-In practice, the model estimates:
-
-- high probability of upward movement → bullish signal  
-- low probability of upward movement → bearish signal  
-
----
-
-## Step 3. Generate trading signals
-
-The next step is to convert probabilities into actual trading decisions.
-
-The logic is:
-
-- **Long signal** when the probability of upward movement is sufficiently high  
-- **Short signal** when the probability of upward movement is sufficiently low  
-- **No trade** when the probability is close to neutral  
-
-This confidence filter is important because it avoids forcing a trade at every hour and keeps only the signals with stronger conviction.
-
----
-
-## Step 4. Backtest the strategy
-
-Once the signals are created, they are applied to the realised next-hour price movement.
-
-The backtest evaluates what would have happened historically if the strategy had followed the model’s signals.
-
-For each trade:
-
-- long position profits if price increases  
-- short position profits if price decreases  
-- transaction costs are subtracted  
-
-This produces the key trading outputs:
-
-- trade-by-trade PnL  
-- cumulative PnL  
-- win rate  
-- drawdown  
-- Sharpe-like performance measure  
-
----
-
-## Step 5. Evaluate strategy performance
-
-The final directional strategy is assessed using a set of practical trading metrics.
+## Strategy Results
 
 | Market | Total PnL | Win Rate | Avg Trade PnL | Sharpe-like | Max Drawdown |
 |--------|----------:|---------:|--------------:|------------:|-------------:|
 | DK1 | 33129 | 64.1% | 7.13 | 0.40 | -114 |
 | DK2 | 41550 | 66.1% | 8.78 | 0.42 | -91 |
 
-These results show that the directional framework produces:
+**Observations:**
 
-- positive cumulative profitability in both bidding zones  
-- win rates above 60%  
-- positive average trade PnL  
-- limited drawdowns relative to total gains  
+- Positive cumulative PnL in both markets  
+- Win rate above 60%  
+- Positive average trade returns  
+- Drawdowns are limited relative to gains  
 
 ---
 
@@ -225,41 +219,48 @@ These results show that the directional framework produces:
   <img src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Danish%20Power%20Market%20Analytics%3A%20Forecasting%20and%20PnL%20Analysis/PNG/PNG/daily_cumulative_pnl.png" width="900"/>
 </p>
 
-The cumulative PnL chart shows that profitability increases steadily through time in both DK1 and DK2. This indicates that the performance does not depend on a single isolated period, but is built progressively across the backtest.
+**Observations:**
+
+- Steady upward growth over time  
+- DK2 consistently outperforms DK1  
+- Performance is not driven by a single period  
 
 ---
 
-## Drawdown analysis
+## Drawdown Analysis
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Danish%20Power%20Market%20Analytics%3A%20Forecasting%20and%20PnL%20Analysis/PNG/PNG/drawdown.png" width="900"/>
 </p>
 
-The drawdown chart measures temporary losses from previous PnL peaks. In this case, drawdowns remain relatively limited and short-lived compared with the overall profitability of the strategy, suggesting a controlled risk profile.
+**Observations:**
+
+- Frequent but controlled drawdowns  
+- Losses are short-lived  
+- No prolonged negative periods  
 
 ---
 
-## Key trading insight
+## Key Insight
 
-This stage shows that **forecasting price levels and building profitable trading strategies are not the same problem**.
+The model is not perfect at predicting price levels, but:
 
-The original level-based approach was not well aligned with directional trading. By reformulating the task as a probability-based directional model, the strategy becomes more consistent with the underlying trading objective and produces stronger practical results.
+> it is effective at capturing **direction**, which is what drives trading performance
 
 ---
 
 # 6. Final Summary
 
-This project analyses Danish day-ahead electricity prices through multiple modelling stages, moving from a pure time-series baseline to models that incorporate market fundamentals and broader structural variables.
+- Electricity prices show strong short-term persistence  
+- Market fundamentals (especially wind) significantly improve forecasts  
+- Adding more variables does not improve performance  
+- The Market Drivers model provides the best balance  
 
-The results show that price history alone contains useful information, but forecast accuracy improves significantly when the model includes economically meaningful drivers such as wind generation, temperature and gas prices.
+**Final conclusion:**
 
-The Market Drivers model achieved the best balance between predictive performance and economic interpretability. Adding further structural variables increased complexity, but introduced additional noise without improving results.
+> Forecasting accuracy alone is not sufficient — models must be aligned with the decision-making objective.
 
-Extending the analysis to trading revealed an important limitation: accurate price forecasts do not necessarily translate into profitable trading strategies.
-
-By reformulating the problem as a directional prediction task, the model becomes better aligned with trading objectives, resulting in consistent positive PnL, improved win rates and controlled drawdowns.
-
-Overall, the project highlights a key insight for applied energy analytics: the most effective models are those that combine relevant market signals with a structure aligned to the final decision-making objective.
+In this case, reformulating the problem as a directional prediction task enables the model to generate **consistent and profitable trading outcomes**.
 
 ---
 
@@ -268,7 +269,7 @@ Overall, the project highlights a key insight for applied energy analytics: the 
 Antonio Espino Bautista  
 
 Economics & Business Intelligence  
-Energy market analytics | Data analysis | Forecasting  
+Energy Market Analytics | Forecasting | Trading  
 
-GitHub  
+GitHub:  
 https://github.com/antespbau
