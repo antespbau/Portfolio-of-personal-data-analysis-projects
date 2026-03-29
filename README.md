@@ -4,22 +4,42 @@ Hi, I’m Antonio Espino Bautista. This repo is a small portfolio of personal da
 
 ## Projects
 
-### 1) Denmark electricity price forecasting (Python / Machine Learning)
+## 1) Danish Power Market Analytics: Forecasting & Trading (Python / Machine Learning)
 
-**Goal:** analyse and forecast day-ahead electricity prices in Denmark (DK1 and DK2 bidding zones) using time-series features and machine learning models.
+**Goal:**  
+Analyse and forecast Danish day-ahead electricity prices (DK1 and DK2), and evaluate whether those forecasts can be transformed into **profitable trading strategies**.
+
+**Scope:**
+
+This project is divided into two parts:
+
+- **Forecasting:** development of machine learning models to predict electricity prices  
+- **Trading:** conversion of model outputs into directional signals and PnL evaluation  
 
 **What I did:**
-- Extracted and cleaned Danish electricity price data from public energy market sources
-- Built an end-to-end forecasting pipeline including ingestion, feature engineering, model training and forecast visualisation
-- Engineered time-series predictors such as lagged prices, rolling statistics and calendar variables
-- Tested different historical training windows to improve forecast performance
-- Trained **machine learning forecasting models with XGBoost** to predict next-week hourly electricity prices
-- Extended the baseline model with **market drivers** such as wind generation, temperature and gas prices to improve economic interpretability
-- Tested a more complex structural version including load and cross-border flows, and compared whether additional variables improved or worsened performance
-- Evaluated the models using **MAE** and **RMSE** across DK1 and DK2
-- Produced forecast comparison charts showing how the different modelling approaches behave in each price zone
 
-➡️ Folder: [Denmark electricity price forecasting](Denmark%20Energy%20Price%20Forecasting/)
+- Built an end-to-end data pipeline using Danish energy market data (Energi Data Service)
+- Engineered time-series features including lagged prices, rolling statistics and calendar variables
+- Trained forecasting models using **XGBoost** and compared different modelling approaches:
+  - Baseline (time-series only)
+  - Market Drivers (wind, temperature, gas)
+  - Extended Structural (load, cross-border flows)
+- Evaluated performance using **MAE and RMSE**
+- Analysed feature importance and economic interpretability of the models
+- Designed a **directional trading strategy** based on predicted price movements
+- Backtested trading performance including:
+  - cumulative PnL  
+  - win rate  
+  - drawdown  
+  - Sharpe-like metric  
+
+**Key insight:**
+
+The results show that while price forecasting alone has limitations, reframing the problem as a **directional prediction task** allows the model to generate **consistent and profitable trading signals**, capturing system-wide market dynamics.
+
+➡️ Folder:  
+[ Danish Power Market Analytics: Forecasting and PnL Analysis ](Danish%20Power%20Market%20Analytics%3A%20Forecasting%20and%20PnL%20Analysis/)
+
 
 **Next week forecast comparison** — baseline vs market drivers vs extended model  
 
