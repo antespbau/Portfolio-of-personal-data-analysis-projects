@@ -36,10 +36,6 @@ The historical price series shows strong volatility, with frequent spikes and ab
   <img src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Danish%20Power%20Market%20Analytics%3A%20Forecasting%20and%20PnL%20Analysis/PNG/PNG/window_results_plot.png" width="900"/>
 </p>
 
-The training window is selected using the script:
-
-➡️ [`test_best_window.py`](Danish%20Power%20Market%20Analytics%3A%20Forecasting%20and%20PnL%20Analysis/Scripts/Basic%20model/basic%20model/test_best_window.py)
-
 The results show that intermediate windows, around 12 months, provide the best performance. Short windows lead to unstable models that overreact to recent fluctuations, while long windows include outdated market conditions and reduce predictive accuracy.
 
 ---
