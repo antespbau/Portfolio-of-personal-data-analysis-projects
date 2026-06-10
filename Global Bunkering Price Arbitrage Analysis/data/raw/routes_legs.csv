@@ -1,0 +1,21 @@
+route_id,leg_order,from_port,to_port,distance_nm
+R001,1,Singapore,Colombo,1580
+R001,2,Colombo,Suez,3440
+R001,3,Suez,Malta,950
+R001,4,Malta,Gibraltar,980
+R001,5,Gibraltar,Rotterdam,1200
+R002,1,Singapore,Port Louis,3050
+R002,2,Port Louis,Cape Town,2300
+R002,3,Cape Town,Las Palmas,4200
+R002,4,Las Palmas,Gibraltar,700
+R002,5,Gibraltar,Rotterdam,1200
+R003,1,Rotterdam,Gibraltar,1200
+R003,2,Gibraltar,Suez,1930
+R003,3,Suez,Djibouti,1200
+R003,4,Djibouti,Fujairah,1450
+R004,1,Fujairah,Colombo,1900
+R004,2,Colombo,Singapore,1580
+R005,1,Houston,Gibraltar,4700
+R005,2,Gibraltar,Rotterdam,1200
+R006,1,Singapore,Panama,10500
+R006,2,Panama,Houston,1500

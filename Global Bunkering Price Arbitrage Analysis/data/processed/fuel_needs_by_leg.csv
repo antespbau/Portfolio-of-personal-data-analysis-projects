@@ -1,0 +1,61 @@
+route_id,leg_order,from_port,to_port,distance_nm,vessel_type,speed_knots,voyage_days,fuel_needed_mt,fuel_required_with_reserve_mt
+R001,1,Singapore,Colombo,1580,Product Tanker,12,5.49,192.01,211.22
+R001,1,Singapore,Colombo,1580,Bulk Carrier,11,5.98,167.58,184.33
+R001,1,Singapore,Colombo,1580,Container Ship,16,4.11,370.31,407.34
+R001,2,Colombo,Suez,3440,Product Tanker,12,11.94,418.06,459.86
+R001,2,Colombo,Suez,3440,Bulk Carrier,11,13.03,364.85,401.33
+R001,2,Colombo,Suez,3440,Container Ship,16,8.96,806.25,886.88
+R001,3,Suez,Malta,950,Product Tanker,12,3.3,115.45,127.0
+R001,3,Suez,Malta,950,Bulk Carrier,11,3.6,100.76,110.83
+R001,3,Suez,Malta,950,Container Ship,16,2.47,222.66,244.92
+R001,4,Malta,Gibraltar,980,Product Tanker,12,3.4,119.1,131.01
+R001,4,Malta,Gibraltar,980,Bulk Carrier,11,3.71,103.94,114.33
+R001,4,Malta,Gibraltar,980,Container Ship,16,2.55,229.69,252.66
+R001,5,Gibraltar,Rotterdam,1200,Product Tanker,12,4.17,145.83,160.42
+R001,5,Gibraltar,Rotterdam,1200,Bulk Carrier,11,4.55,127.27,140.0
+R001,5,Gibraltar,Rotterdam,1200,Container Ship,16,3.12,281.25,309.38
+R002,1,Singapore,Port Louis,3050,Product Tanker,12,10.59,370.66,407.73
+R002,1,Singapore,Port Louis,3050,Bulk Carrier,11,11.55,323.48,355.83
+R002,1,Singapore,Port Louis,3050,Container Ship,16,7.94,714.84,786.33
+R002,2,Port Louis,Cape Town,2300,Product Tanker,12,7.99,279.51,307.47
+R002,2,Port Louis,Cape Town,2300,Bulk Carrier,11,8.71,243.94,268.33
+R002,2,Port Louis,Cape Town,2300,Container Ship,16,5.99,539.06,592.97
+R002,3,Cape Town,Las Palmas,4200,Product Tanker,12,14.58,510.42,561.46
+R002,3,Cape Town,Las Palmas,4200,Bulk Carrier,11,15.91,445.45,490.0
+R002,3,Cape Town,Las Palmas,4200,Container Ship,16,10.94,984.38,1082.81
+R002,4,Las Palmas,Gibraltar,700,Product Tanker,12,2.43,85.07,93.58
+R002,4,Las Palmas,Gibraltar,700,Bulk Carrier,11,2.65,74.24,81.67
+R002,4,Las Palmas,Gibraltar,700,Container Ship,16,1.82,164.06,180.47
+R002,5,Gibraltar,Rotterdam,1200,Product Tanker,12,4.17,145.83,160.42
+R002,5,Gibraltar,Rotterdam,1200,Bulk Carrier,11,4.55,127.27,140.0
+R002,5,Gibraltar,Rotterdam,1200,Container Ship,16,3.12,281.25,309.38
+R003,1,Rotterdam,Gibraltar,1200,Product Tanker,12,4.17,145.83,160.42
+R003,1,Rotterdam,Gibraltar,1200,Bulk Carrier,11,4.55,127.27,140.0
+R003,1,Rotterdam,Gibraltar,1200,Container Ship,16,3.12,281.25,309.38
+R003,2,Gibraltar,Suez,1930,Product Tanker,12,6.7,234.55,258.0
+R003,2,Gibraltar,Suez,1930,Bulk Carrier,11,7.31,204.7,225.17
+R003,2,Gibraltar,Suez,1930,Container Ship,16,5.03,452.34,497.58
+R003,3,Suez,Djibouti,1200,Product Tanker,12,4.17,145.83,160.42
+R003,3,Suez,Djibouti,1200,Bulk Carrier,11,4.55,127.27,140.0
+R003,3,Suez,Djibouti,1200,Container Ship,16,3.12,281.25,309.38
+R003,4,Djibouti,Fujairah,1450,Product Tanker,12,5.03,176.22,193.84
+R003,4,Djibouti,Fujairah,1450,Bulk Carrier,11,5.49,153.79,169.17
+R003,4,Djibouti,Fujairah,1450,Container Ship,16,3.78,339.84,373.83
+R004,1,Fujairah,Colombo,1900,Product Tanker,12,6.6,230.9,253.99
+R004,1,Fujairah,Colombo,1900,Bulk Carrier,11,7.2,201.52,221.67
+R004,1,Fujairah,Colombo,1900,Container Ship,16,4.95,445.31,489.84
+R004,2,Colombo,Singapore,1580,Product Tanker,12,5.49,192.01,211.22
+R004,2,Colombo,Singapore,1580,Bulk Carrier,11,5.98,167.58,184.33
+R004,2,Colombo,Singapore,1580,Container Ship,16,4.11,370.31,407.34
+R005,1,Houston,Gibraltar,4700,Product Tanker,12,16.32,571.18,628.3
+R005,1,Houston,Gibraltar,4700,Bulk Carrier,11,17.8,498.48,548.33
+R005,1,Houston,Gibraltar,4700,Container Ship,16,12.24,1101.56,1211.72
+R005,2,Gibraltar,Rotterdam,1200,Product Tanker,12,4.17,145.83,160.42
+R005,2,Gibraltar,Rotterdam,1200,Bulk Carrier,11,4.55,127.27,140.0
+R005,2,Gibraltar,Rotterdam,1200,Container Ship,16,3.12,281.25,309.38
+R006,1,Singapore,Panama,10500,Product Tanker,12,36.46,1276.04,1403.65
+R006,1,Singapore,Panama,10500,Bulk Carrier,11,39.77,1113.64,1225.0
+R006,1,Singapore,Panama,10500,Container Ship,16,27.34,2460.94,2707.03
+R006,2,Panama,Houston,1500,Product Tanker,12,5.21,182.29,200.52
+R006,2,Panama,Houston,1500,Bulk Carrier,11,5.68,159.09,175.0
+R006,2,Panama,Houston,1500,Container Ship,16,3.91,351.56,386.72

@@ -1,0 +1,4 @@
+vessel_type,speed_knots,consumption_mt_day,tank_capacity_mt,daily_vessel_cost_usd,safety_reserve_pct
+Product Tanker,12,35,1500,25000,0.10
+Bulk Carrier,11,28,2000,20000,0.10
+Container Ship,16,90,6000,60000,0.10

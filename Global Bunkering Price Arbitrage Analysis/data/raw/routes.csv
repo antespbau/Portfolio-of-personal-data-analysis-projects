@@ -1,0 +1,7 @@
+route_id,route_name,scenario,origin,destination
+R001,Asia-Europe via Suez,Normal,Singapore,Rotterdam
+R002,Asia-Europe via Cape,Disruption,Singapore,Rotterdam
+R003,Europe-Middle East Gulf via Suez,Normal,Rotterdam,Fujairah
+R004,Middle East Gulf-Asia,Normal,Fujairah,Singapore
+R005,Transatlantic,Normal,Houston,Rotterdam
+R006,Asia-US East Coast via Panama,Normal,Singapore,Houston
