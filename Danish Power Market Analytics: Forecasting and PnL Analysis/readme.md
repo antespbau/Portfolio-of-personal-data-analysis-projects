@@ -41,7 +41,7 @@ The raw scraped data was cleaned and transformed into a structured VLSFO histori
 ## Exploratory visualisation
 
 <p align="center">
-  <img src="outputs/charts/vlsfo_price_evolution_by_port.png" width="900"/>
+  <img src="charts/vlsfo_price_evolution_by_port.png" width="900"/>
 </p>
 
 The price evolution chart shows clear differences between the selected bunkering ports. Rotterdam and Gibraltar remain consistently among the cheapest ports during the analysed period, while Fujairah shows significantly higher VLSFO prices.
