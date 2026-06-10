@@ -1,8 +1,8 @@
-# Danish Power Market Analytics: Forecasting and PnL Analysis
+# Global Bunkering Price Arbitrage Analysis: VLSFO Port Spreads and Route-Based Savings
 
-This project builds an end-to-end data pipeline to analyse and forecast Danish electricity prices in the two bidding zones, DK1 (West Denmark) and DK2 (East Denmark). The workflow covers data ingestion, exploratory analysis, feature engineering, model development and evaluation, and extends into directional trading and PnL analysis.
+This project builds an end-to-end data analysis workflow to study VLSFO bunker fuel price differences across major global bunkering ports. The workflow covers data collection, data cleaning, exploratory price analysis, spread calculation, route-based arbitrage modelling and final visualisation.
 
-The objective of the project is not only to generate accurate forecasts, but to assess whether those forecasts can be transformed into consistent and profitable trading decisions.
+The objective of the project is not only to compare bunker fuel prices across ports, but to assess whether these price differences can be transformed into practical commercial decisions: bunkering earlier in a cheaper port instead of buying fuel later in a more expensive destination.
 
 ---
 
@@ -10,166 +10,204 @@ The objective of the project is not only to generate accurate forecasts, but to 
 
 # Project Overview
 
-Electricity prices in Denmark are influenced by a combination of demand patterns, seasonal effects, renewable generation, fuel costs and cross-border market interactions. These dynamics create a complex environment where prices are both highly volatile and structurally driven.
+Bunker fuel is one of the most important operating costs for vessels. After IMO 2020, many vessels without scrubbers shifted towards VLSFO in order to comply with the 0.5% sulphur limit.
 
-To progressively capture this behaviour, the project is developed through three modelling stages. The first model relies exclusively on historical price information and temporal features. The second model introduces key market fundamentals such as wind generation, temperature and gas prices. The third model expands the feature set further by including system load and cross-border flows.
+However, VLSFO prices are not equal across ports. Differences between ports can create potential arbitrage opportunities, especially when a vessel is sailing through several major bunkering hubs. A cheaper port does not automatically represent a real opportunity, because the vessel also needs to consider route feasibility, fuel consumption, tank capacity, port costs and timing.
 
-All models are evaluated using standard forecasting metrics, specifically MAE and RMSE, in order to compare their predictive performance.
+This project develops a simplified analytical framework to identify where price differences appear, how large those differences are, and whether they remain attractive after applying basic operational assumptions.
 
 ---
 
-# 1. Baseline Forecasting Model
+# 1. VLSFO Price Collection and Cleaning
+
+The first stage of the project focuses on collecting recent VLSFO bunker price data from public Ship & Bunker port pages.
+
+The selected ports are:
+
+* Rotterdam
+* Gibraltar
+* Houston
+* Singapore
+* Fujairah
+
+These ports were selected because they represent important global bunkering hubs across Europe, the Mediterranean, the Middle East, Asia and the Americas.
+
+The raw scraped data was cleaned and transformed into a structured VLSFO historical price dataset. Only VLSFO observations were kept for the final analysis, because the purpose of the first version of the project is to focus on one standard marine fuel product.
+
+---
+
+# 2. VLSFO Price Evolution by Port
 
 ## Exploratory visualisation
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Danish%20Power%20Market%20Analytics%3A%20Forecasting%20and%20PnL%20Analysis/PNG/PNG/dk1_dk2_price_evolution.png" width="900"/>
+  <img src="outputs/charts/vlsfo_price_evolution_by_port.png" width="900"/>
 </p>
 
-The historical price series shows strong volatility, with frequent spikes and abrupt changes. DK1 and DK2 generally follow similar patterns, reflecting the integration of the Danish electricity market, although noticeable divergences appear during specific periods. Clear intraday cycles and short-term repetition can also be observed, suggesting that past prices contain useful predictive information.
+The price evolution chart shows clear differences between the selected bunkering ports. Rotterdam and Gibraltar remain consistently among the cheapest ports during the analysed period, while Fujairah shows significantly higher VLSFO prices.
+
+Fujairah also presents stronger movements over time, especially from the beginning of June onwards. This is relevant from a commercial point of view because a higher price level combined with stronger volatility can create larger spreads, but also greater uncertainty.
 
 ---
 
-## Training window optimisation
+# 3. Average VLSFO Price Comparison
+
+## Average price by port
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Danish%20Power%20Market%20Analytics%3A%20Forecasting%20and%20PnL%20Analysis/PNG/PNG/window_results_plot.png" width="900"/>
+  <img src="outputs/charts/average_vlsfo_price_by_port.png" width="900"/>
 </p>
 
-The results show that intermediate windows, around 12 months, provide the best performance. Short windows lead to unstable models that overreact to recent fluctuations, while long windows include outdated market conditions and reduce predictive accuracy.
+The average price comparison highlights the main structure of the market sample. Rotterdam is the cheapest port on average, followed by Gibraltar. Houston and Singapore remain in the middle of the price range, while Fujairah is clearly the most expensive port in the dataset.
+
+This result suggests that, for vessels sailing from Europe towards the Middle East, buying VLSFO earlier in Rotterdam or Gibraltar could be more attractive than waiting to bunker in Fujairah.
 
 ---
 
-## Forecast generation
+# 4. Daily Price Spread Analysis
+
+## Fujairah vs Rotterdam spread
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Danish%20Power%20Market%20Analytics%3A%20Forecasting%20and%20PnL%20Analysis/PNG/PNG/forecast_next_week_hourly.png" width="900"/>
+  <img src="outputs/charts/daily_spread_fujairah_vs_rotterdam.png" width="900"/>
 </p>
 
-The baseline model captures the general trend and seasonal structure of electricity prices. However, predictions are noticeably smoother than actual prices and fail to capture extreme spikes. This reflects the limitation of relying exclusively on historical price behaviour without incorporating market drivers.
+The spread between Fujairah and Rotterdam is one of the most important indicators in the project. It measures how much more expensive Fujairah is compared with Rotterdam on each day.
+
+A positive spread means that Rotterdam is cheaper than Fujairah. The larger the spread, the stronger the potential gross saving from buying fuel in Rotterdam instead of Fujairah.
+
+During the analysed period, the Fujairah-Rotterdam spread remains positive every day. The spread also increases sharply in early June, showing how quickly bunker price differences can become commercially significant.
 
 ---
 
-# 2. Market Drivers Model
+# SECOND PART OF THE PROJECT — ROUTE ARBITRAGE
 
-## Coefficients
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Danish%20Power%20Market%20Analytics%3A%20Forecasting%20and%20PnL%20Analysis/PNG/PNG/price_correlation_DK1.png" width="450"/>
-  <img src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Danish%20Power%20Market%20Analytics%3A%20Forecasting%20and%20PnL%20Analysis/PNG/PNG/price_correlation_DK2.png" width="450"/>
-</p>
-
-The introduction of market fundamentals reveals clear relationships between prices and underlying drivers. Lagged prices remain dominant, confirming strong short-term persistence. Wind generation shows a clear negative relationship with prices, reflecting its role as a supply-side driver. Temperature is also negatively correlated, acting as a proxy for demand, while gas prices display a weaker but consistent positive relationship, representing marginal production costs.
-
----
-
-## Actual vs Predicted Prices
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Danish%20Power%20Market%20Analytics%3A%20Forecasting%20and%20PnL%20Analysis/PNG/PNG/actual_vs_predicted_market_drivers_DK1.png" width="750"/>
-  <img src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Danish%20Power%20Market%20Analytics%3A%20Forecasting%20and%20PnL%20Analysis/PNG/PNG/actual_vs_predicted_market_drivers_DK2.png" width="750"/>
-</p>
-
-Compared to the baseline model, predictions align more closely with actual price movements. The model reacts better to changes in market conditions and improves the timing of price variations. Although extreme spikes are still underestimated, the overall structure of the series is more accurately represented.
-
----
-
-# 3. Extended Structural Model
-
-## Coefficients
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Danish%20Power%20Market%20Analytics%3A%20Forecasting%20and%20PnL%20Analysis/PNG/PNG/price_correlation_improve_market_drivers_DK1.png" width="450"/>
-  <img src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Danish%20Power%20Market%20Analytics%3A%20Forecasting%20and%20PnL%20Analysis/PNG/PNG/price_correlation_improve_market_drivers_DK2.png" width="450"/>
-</p>
-
-The addition of structural variables such as load and cross-border flows introduces new relationships, but these variables do not dominate the model. Core drivers such as lagged prices and wind generation remain the most relevant, while some additional variables appear noisy or inconsistent.
-
----
-
-## Improved Model Actual vs Predicted
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Danish%20Power%20Market%20Analytics%3A%20Forecasting%20and%20PnL%20Analysis/PNG/PNG/reduced_model_actual_vs_predicted_DK1.png" width="700"/>
-  <img src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Danish%20Power%20Market%20Analytics%3A%20Forecasting%20and%20PnL%20Analysis/PNG/PNG/reduced_model_actual_vs_predicted_DK2.png" width="700"/>
-</p>
-
-The extended model does not provide a clear improvement over the Market Drivers model. Predictions become slightly noisier and the ability to capture extreme movements does not improve. This indicates that increasing complexity does not necessarily enhance predictive performance.
-
----
-
-# 4. Forecast Comparison Across Models
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Danish%20Power%20Market%20Analytics%3A%20Forecasting%20and%20PnL%20Analysis/PNG/PNG/forecast_comparison_models_DK1.png" width="900"/>
-  <img src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Danish%20Power%20Market%20Analytics%3A%20Forecasting%20and%20PnL%20Analysis/PNG/PNG/forecast_comparison_models_DK2.png" width="900"/>
-</p>
-
-The comparison highlights clear differences between models. The baseline model produces overly smooth forecasts and fails to capture volatility. The extended model introduces instability and noise. The Market Drivers model provides the best balance between stability and responsiveness, making it the most reliable approach.
-
----
-
-# SECOND PART OF THE PROJECT — TRADING
-
-# 5. Directional Trading and PnL Analysis
+# 5. Route-Based Arbitrage Model
 
 ## Motivation
 
-Forecasting price levels alone is not sufficient for trading purposes. A model can achieve good accuracy metrics while still failing to generate profitable signals. For this reason, the problem is reformulated as a directional prediction task, focusing on whether prices will move up or down in the next period.
+A simple price comparison is not enough to support a commercial bunkering decision. A vessel cannot always choose the cheapest port in the world. The port must be located on or near the vessel’s route, and the vessel must have enough tank capacity to carry the fuel required for the next legs of the voyage.
+
+For this reason, the project extends the analysis into a route-based arbitrage model.
+
+The first version of the model focuses on a Europe to Fujairah route and compares two alternative bunkering decisions:
+
+* bunker earlier in Rotterdam
+* bunker earlier in Gibraltar
+* compare both alternatives against buying in Fujairah
+
+The model estimates the gross saving from the price spread and then subtracts simplified extra costs such as port call cost, delay cost and a basic risk buffer.
 
 ---
 
-## Strategy Results
+# 6. Net Saving Analysis
 
-| Market | Total PnL | Win Rate | Avg Trade PnL | Sharpe-like | Max Drawdown |
-|--------|----------:|---------:|--------------:|------------:|-------------:|
-| DK1 | 33129 | 64.1% | 7.13 | 0.40 | -114 |
-| DK2 | 41550 | 66.1% | 8.78 | 0.42 | -91 |
-
-The strategy produces consistent positive performance across both bidding zones. Win rates above 60% and positive average returns indicate that the model captures a meaningful directional signal. Drawdowns remain controlled relative to total profitability.
-
----
-
-## Cumulative PnL
+## Net saving by alternative bunker port
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Danish%20Power%20Market%20Analytics%3A%20Forecasting%20and%20PnL%20Analysis/PNG/PNG/daily_cumulative_pnl.png" width="900"/>
+  <img src="outputs/charts/net_saving_by_date_and_alternative_port.png" width="900"/>
 </p>
 
-The cumulative PnL evolves steadily over time, indicating that performance is not driven by isolated events but by consistent signal generation. DK2 shows slightly stronger results than DK1.
+The net saving chart shows the estimated daily savings from bunkering earlier in Rotterdam or Gibraltar instead of buying VLSFO in Fujairah.
+
+Both alternatives remain profitable in the simplified model. Rotterdam generally produces the highest estimated saving because it has the lowest average VLSFO price in the dataset. Gibraltar also remains attractive, although its savings are slightly lower because its prices are higher than Rotterdam and the model includes additional timing assumptions.
+
+The results suggest that route-based bunker procurement can create meaningful savings when price differences between ports are large enough to compensate for operational costs and timing risk.
 
 ---
 
-## Drawdown Analysis
+# 7. Vessel Fuel Requirement Calculation
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/antespbau/Portfolio-of-personal-data-analysis-projects/main/Danish%20Power%20Market%20Analytics%3A%20Forecasting%20and%20PnL%20Analysis/PNG/PNG/drawdown.png" width="900"/>
-</p>
+The project also includes a basic vessel fuel requirement calculation by route leg and vessel type.
 
-Drawdowns are present but remain limited and short-lived. The absence of prolonged negative periods suggests that the strategy maintains a stable risk profile.
+The model uses simplified vessel profiles with:
+
+* vessel speed
+* daily fuel consumption
+* tank capacity
+* daily vessel cost
+* safety reserve percentage
+
+For each route leg, the model estimates:
+
+* voyage days
+* fuel required without reserve
+* fuel required with safety reserve
+
+This step is important because bunker arbitrage is not only about price. A vessel must physically be able to carry enough fuel to reach the next port or destination safely.
 
 ---
 
-# 6. Final Summary
+# 8. Key Results
 
-This project develops a complete analytical pipeline to study Danish day-ahead electricity prices, moving from a purely statistical time-series approach to models that incorporate market fundamentals and, finally, evaluating their usefulness in a trading context.
+| Area                     | Main Result               |
+| ------------------------ | ------------------------- |
+| Cheapest port            | Rotterdam                 |
+| Second cheapest port     | Gibraltar                 |
+| Most expensive port      | Fujairah                  |
+| Highest volatility       | Fujairah                  |
+| Strongest spread         | Fujairah vs Rotterdam     |
+| Best route alternative   | Rotterdam before Fujairah |
+| Second route alternative | Gibraltar before Fujairah |
 
-The baseline model confirms that electricity prices exhibit strong short-term persistence and recurring temporal patterns, but it also highlights the limitations of relying exclusively on historical data. By introducing market fundamentals such as wind generation, temperature and gas prices, the model becomes more aligned with the economic mechanisms that drive price formation, resulting in improved predictive performance.
+The analysis shows that Rotterdam was consistently the most attractive port in the selected sample, while Fujairah was the most expensive. The largest theoretical savings appeared when comparing Fujairah against Rotterdam.
 
-Extending the model further with additional structural variables does not lead to better results, showing that increasing complexity can introduce noise rather than useful information. The most effective model is therefore the one that balances simplicity with economically meaningful variables.
+After applying simplified operational assumptions, both Rotterdam and Gibraltar remained profitable alternatives in the Europe to Fujairah route scenario.
 
-The trading analysis demonstrates that forecasting accuracy alone is not sufficient to generate profitable strategies. By reframing the problem as a directional prediction task, the model becomes better aligned with trading objectives and is able to produce consistent positive PnL, stable win rates and controlled drawdowns.
+---
 
-Overall, the project shows that the value of a model in energy markets lies not only in its predictive power, but in its ability to support real decision-making.
+# 9. Final Summary
+
+This project develops a complete analytical pipeline to study VLSFO bunker fuel price differences across major global ports and evaluate whether those differences can support route-based arbitrage decisions.
+
+The first part of the project focuses on data collection, cleaning and exploratory analysis. Recent public bunker price data is transformed into a structured dataset, allowing ports to be compared by average price, daily ranking, price range and volatility.
+
+The analysis shows a clear price hierarchy among the selected ports. Rotterdam is the cheapest port on average, Gibraltar is the second cheapest, and Fujairah is the most expensive and most volatile. This creates strong theoretical spreads, especially between Fujairah and Rotterdam.
+
+The second part of the project moves from simple price comparison to route-based decision-making. By comparing the cost of buying VLSFO earlier in Rotterdam or Gibraltar against buying later in Fujairah, the model estimates potential gross and net savings for a Europe to Fujairah route.
+
+The results show that both Rotterdam and Gibraltar remain profitable alternatives under the simplified assumptions used in the model. Rotterdam provides the strongest savings because of its lower VLSFO price level.
+
+Overall, the project shows that bunker fuel price analysis becomes more valuable when it is connected to routes, vessel characteristics and commercial decision-making. The cheapest port is only useful if it fits the vessel’s route, timing and fuel capacity constraints.
+
+---
+
+# Limitations
+
+This is a portfolio version of the model. The main limitations are:
+
+* Free public bunker price data provides only limited recent history.
+* Full historical port-level bunker price data is usually paid market data.
+* Operational costs are simplified assumptions.
+* Vessel fuel consumption is based on simplified vessel profiles.
+* The model does not include weather, congestion, AIS data or supplier-specific availability.
+* The analysis focuses only on VLSFO.
+* The route model is simplified and should not be used as a real trading or procurement tool without further validation.
+
+---
+
+# Future Improvements
+
+The project could be improved by adding:
+
+* more ports and routes
+* MGO and HSFO analysis
+* real port call cost estimates
+* vessel-specific consumption curves
+* AIS-based route data
+* congestion and waiting time data
+* paid historical bunker market data
+* Power BI dashboard visualisations
+* scenario analysis for different vessel types and bunker quantities
 
 ---
 
 # Author
 
-Antonio Espino Bautista  
+Antonio Espino Bautista
 
-Economics & Business Intelligence  
-Energy Market Analytics | Forecasting | Trading  
+Economics & Business Intelligence
+Marine Fuel Analytics | Bunkering | Route Optimisation | Trading
 
-GitHub:  
+GitHub:
 https://github.com/antespbau
